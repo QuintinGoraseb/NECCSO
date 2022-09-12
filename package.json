@@ -1,0 +1,24 @@
+{
+  "name": "neccso",
+  "version": "1.0.0",
+  "description": "NECCSO Officail Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Namibian",
+    "Education",
+    "Coalition",
+    "for",
+    "Civil",
+    "Society",
+    "Organizations"
+  ],
+  "author": "Quintin Jackson Goraseb",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "bootstrap": "^5.2.1"
+  }
+}
