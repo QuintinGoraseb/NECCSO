@@ -29,14 +29,135 @@
     
 </head>
 <body>
-
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+        <ul>
+            <li class="mobile-only"><a href="#about_area p_120" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Background</a></li>
+            <li class="mobile-only"><a href="#">Organizational Goals</a></li>
+            <li class="mobile-only"><a href="#">Strategic Framwork</a></li>
+            <li class="mobile-only"><a href="#">Projects & Programs</a></li>
+            <li class="mobile-only"><a href="#">Get in touch</a></li>
+            <li><a href="#">Annual Report</a></li>
+            <li><a href="#">NECCSO Members</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
     <!--================ Start Navbar Area ===============-->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="spaceX-logo">
+            </a>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#about_area p_120" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Background</a></li>
+                <li><a href="#">Organizational Goals</a></li>
+                <li><a href="#">Strategic Framwork</a></li>
+                <li><a href="#">Projects & Programs</a></li>
+                <li><a href="#" class="get-in-touch-btn ms-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Get in touch</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
     <!--================ End Navbar Area =================-->
     <!--================ Start Hero Area =================-->
+    <section class="hero">
+        <div class="hero-inner">
+            <h4>Re<span class="line">||</span>Thinking</h4>
+            <h2>Education in Namibia</h2>
+            <a href="#" class="btn-hero">
+                <div class="hover"></div>
+                <span>Learn More</span>
+            </a>
+        </div>
+        <div class="scroll-arrow">
+            <svg width="30px" height="20px">
+              <path
+                stroke="#ffffff"
+                fill="none"
+                stroke-width="2px"
+                d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+              ></path>
+            </svg>
+        </div>
+    </section>
     <!--================ End Hero Area ===================-->
+    <!--================ Start Background Area ===========-->
+    <section class="about p_120" id="about p_120">
+        <div class="container">
+            <div class="row about-inner">
+                <div class="col-lg-6 align-items-stretch"></div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Background Area =============-->
     <!--================ Start Footer Area ===============-->
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="credit">
+                            <p>
+                            Copyright<span class="word"> &copy;</span> <script>document.write(new Date().getFullYear());</script>. All rights reserved. <br> Developed by: <a href="https://ebu.com.na" target="_blank">EBU Computer Solutions cc<span class="word">.</span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!--================ End Footer Area =================-->
     <!--================ Start Modal Area ================-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4 bg-cover" style="background-image: url(/assets/img/contact.jpg); min-height: 300px;"></div>
+                            <div class="col-lg-8">
+                                <form action="" class="row p-lg-5 gy-3">
+                                    <div class="col-12">
+                                        <h1>Have a project in mind?</h1>
+                                        <p>Let's talk about it.</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <label for="exampleFormControlInput1" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <label for="message" class="form-label">Message Area</label>
+                                        <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Enter Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-brand">Send Message</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--================ End Modal Area ==================-->
     
     <!--================ Start JavaScript Area ===========-->

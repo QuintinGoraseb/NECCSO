@@ -1,0 +1,42 @@
+/** Sections **/
+section {
+    position: relative;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+/** BG Image **/
+.hero {
+    background-image: $hero;
+
+    .hero-inner {
+        position: absolute;
+        bottom: 150px;
+        left: 150px;
+        max-width: 560px;
+        h4 {
+            font-family: $din;
+            font-size: 22px;
+            margin-bottom: 5px;
+            font-weight: 300;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+        h2 {
+            font-family: $din;
+            
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.5s ease-in-out 0.2s;
+            animation-fill-mode: both;
+        }
+        a {
+            animation: fadeInUp 0.5s ease-in-out 0.4s;
+            animation-fill-mode: both;
+        }
+    }
+}
+

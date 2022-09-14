@@ -1,3 +1,30 @@
+/** Global Styles **/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $grotesk;
+    background: $bg-color;
+    color: $white;
+}
+
+a {
+    text-decoration: none !important;
+    color: $white !important;
+}
+
+ul {
+    list-style: none !important;
+}
+
+.line {
+  color: 	$prim-color;
+  font-weight: bold;
+}
+
 /** Index Page **/
 
 /** FAQ **/
@@ -33,81 +60,39 @@
   }
   
   /** Footer Page **/
-  footer {
-  
-      h6 {
-          font-weight: 500;
-          letter-spacing: 1px;
-          margin-bottom: 16px;
-          font-size: 20px;
-      }
-  
-      ul, li, a {
-          color: rgba(255, 255, 255, 0.6);
-          padding: 0;
-  
-          &:hover {
-              color: $prim-color;
-          }
-      }
-  
-      p {
-          color: rgba(255, 255, 255, 0.6);
-          text-align: justify;
-      }
-  
-      .footer-top {
-          background: url('/assets/img/footer.jpg');
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          padding: 50px 0;
+footer {
+    position: relative;
+    padding: 15px 0;
+
+    .footer-bottom {
+
+      .credit {
+          text-align: center !important;
       
-          .navbar-brand {
-              font-size: 20px;
-      
-              .logo-footer {
-                  margin-bottom: 16px;
-              }
-          }
-      
-          .social-footer i {
-              font-size: 30px;
-              color: $prim-color !important;
-      
-              &:hover {
-                  color: $text-color !important;
-              }
-          }
-      }
-  
-      .footer-bottom {
-  
-          .credit {
+          p {
+              font-size: 16px;
+              line-height: 24px;
+              font-family: $gelasio;
+              color: $text-color;
+              margin: 10px 0;
+              text-align: justify !important;
               text-align: center !important;
-          
-              p {
-                  font-size: 16px;
-                  line-height: 24px;
-                  font-family: $gelasio;
+              a {
+                  font-family: $playfair;
+                  font-weight: 500;
+                  letter-spacing: 1px;
+                  color: $prim-color;
+                  font-size: bolder;
+                  &:hover {
                   color: $text-color;
-                  margin: 10px 0;
-                  text-align: justify !important;
-                  text-align: center !important;
-                  a {
-                      font-family: $playfair;
-                      font-weight: 500;
-                      letter-spacing: 1px;
-                      color: $prim-color;
-                      font-size: bolder;
-                      &:hover {
-                      color: $text-color;
-                      }
                   }
-                  & + p {
-                      margin-bottom: 0px;
-                  }
+              }
+              & + p {
+                  margin-bottom: 0px;
               }
           }
       }
-  }
+    }
+    
+}
+
