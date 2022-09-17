@@ -25,10 +25,11 @@ $din-exp: "D-DIN Exp", sans-serif;
 $grotesk:"Familjen Grotesk", sans-serif;
 
 /** Color Schemes **/
-$bg-color:#000;
-$prim-color:#1e90ff;
+$bg-color: #7a9eaf;
+$bg-color2: rgb(248,248,248);
+$prim-color:  #7a9eaf;
 $sec-color:#fff;
-$text-color:#fff;
+$text-color: rgb(66,71,76);
 $black: #000;
 $white: #fff;
 $gray-scale: #858585;
@@ -106,8 +107,53 @@ $hero: url('/assets/img/class_dark.jpg');
     margin-top: 5px !important;
   }
   .logo {
-    width: 150px !important;
+    width: 200px !important;
     margin: auto !important;
+  }
+}
+@media (max-width: 991px) {
+  .about {
+    padding-top: .5rem !important;
+    margin-bottom: -6rem;
+  }
+  .about .about_inner .about_left_text h6 {
+    text-align: center !important;
+  }
+  .about .about_inner .about_left_text h3 {
+    text-align: center !important;
+  }
+  .about .about_inner .about_left_text h4 {
+    text-align: center !important;
+  }
+  .about_left_text {
+    padding: .5rem !important;
+  }
+  .stats_heading {
+    h1 {
+      padding-bottom: 1rem;
+    }
+    p {
+      text-align: justify !important;
+      margin-bottom: -5rem;
+    }
+  }
+  .counter-up .content .box .text {
+    margin-bottom: -9rem !important;
+  }
+}
+@media (max-width: 1036px) {
+  .counter-up {
+    padding: 50px 50px 0 50px;
+  }
+  .content .box {
+    width: calc(50% - 30px);
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 580px) {
+  .content .box {
+    width: 100%;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -159,14 +205,13 @@ $hero: url('/assets/img/class_dark.jpg');
 
   /** CTA **/
 .cta {
-    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/footer.jpg") fixed center center;
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/class_dark.jpg") fixed center center;
     background-size: cover;
     padding: 60px 0;
-    margin: 5rem 0;
   }
   
   .cta h3 {
-    color: $prim-color;
+    color: $white;
     font-size: 28px;
     font-weight: 700;
     padding-bottom: 1rem;
@@ -175,9 +220,9 @@ $hero: url('/assets/img/class_dark.jpg');
   }
   
   .cta p {
-    color: $text-color;
+    color: $white;
     font-size: 18px;
-    font-family: $gelasio;
+    font-family: $times;
   }
   
   .cta .cta-btn {
@@ -289,13 +334,23 @@ $hero: url('/assets/img/class_dark.jpg');
       background-color: $bg-color;
   
       h1 {
-        color: $prim-color;
-    }
+        font-family: $playfair;
+        color: $black;
+      }
+
+      p {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #3d4f57;
+        font-family: $cormorant;
+        letter-spacing: 1.2px;
+      }
   
     }
   
     .form-control {
-      background-color: $text-color;
+      background-color: $white;
     }
   
     .form-control:focus {

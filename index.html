@@ -16,6 +16,10 @@
 
     <!-- Font-awesome -->
     <script src="https://kit.fontawesome.com/db08181aad.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -32,8 +36,8 @@
     <div id="overlay"></div>
     <div id="mobile-menu" class="mobile-main-menu">
         <ul>
-            <li class="mobile-only"><a href="#about_area p_120" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Background</a></li>
-            <li class="mobile-only"><a href="#">Organizational Goals</a></li>
+            <li class="mobile-only"><a href="#about p_120" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Background</a></li>
+            <li class="mobile-only"><a href="#">Organisational Goals</a></li>
             <li class="mobile-only"><a href="#">Strategic Framwork</a></li>
             <li class="mobile-only"><a href="#">Projects & Programs</a></li>
             <li class="mobile-only"><a href="#">Get in touch</a></li>
@@ -52,8 +56,8 @@
         </div>
         <nav class="main-menu">
             <ul>
-                <li><a href="#about_area p_120" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Background</a></li>
-                <li><a href="#">Organizational Goals</a></li>
+                <li><a href="#about p_120" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Background</a></li>
+                <li><a href="#">Organisational Goals</a></li>
                 <li><a href="#">Strategic Framwork</a></li>
                 <li><a href="#">Projects & Programs</a></li>
                 <li><a href="#" class="get-in-touch-btn ms-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Get in touch</span></a></li>
@@ -71,7 +75,7 @@
     <section class="hero">
         <div class="hero-inner">
             <h4>Re<span class="line">||</span>Thinking</h4>
-            <h2>Education in Namibia</h2>
+            <h2>Quality of <span class="edu">Education</span> in<br>Namibia</h2>
             <a href="#" class="btn-hero">
                 <div class="hover"></div>
                 <span>Learn More</span>
@@ -92,29 +96,190 @@
     <!--================ Start Background Area ===========-->
     <section class="about p_120" id="about p_120">
         <div class="container">
-            <div class="row about-inner">
-                <div class="col-lg-6 align-items-stretch"></div>
-                <div class="col-lg-6"></div>
+            <div class="row about_inner">
+                <div class="col-lg-5 align-items-stretch">
+                    <div class="about_left_text">
+                        <h6>The back story</h6>
+                        <h3>Namibia Education Coalition for Civil Society Organisations (NECCSO)</h3>
+                    </div>
+                </div>
+                <div class="col-lg-7 about_right_text align-items-stretch">
+                    <p class="has-dropcap">While governments hold the main responsibility for ensuring that people have access to quality basic education there are a wide array of actors within a country that can and should be involved in delivering quality education. In this case, civil society may fill the void as one of those partners which can play a crucial role in bringing voices together under common platforms to make a strong case for quality education. </p>
+                    <p>The Namibian Education Coalition for Civil Society Organisations (NECCSO) was officially launched on 6 September 2011 at the Inaugural General Assembly by approximately 40 founding member civil society organisations. NECCSO is a network of civil society stakeholders in education or which have a keen interest in educational matters in terms of policy development, policy implementation, policy monitoring and service delivery. NECCSO asserts that the contribution of a broad-based and coordinated civil society is instrumental for achieving relevant inclusive quality education for all.</p>
+                </div>
             </div>
         </div>
     </section>
-    <!--================ End Background Area =============-->
-    <!--================ Start Footer Area ===============-->
-    <footer>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="credit">
-                            <p>
-                            Copyright<span class="word"> &copy;</span> <script>document.write(new Date().getFullYear());</script>. All rights reserved. <br> Developed by: <a href="https://ebu.com.na" target="_blank">EBU Computer Solutions cc<span class="word">.</span></a>
-                            </p>
+    <!--================ Start Gallery Area ==============-->
+    <section class="gallery" id="gallery">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up">
+                    <div class="card">
+                          <div class="card-img">
+                            <img src="assets/img/image_2.jpg" alt="...">
+                          </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Inaugural General Assembly 2011</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up">
+                    <div class="card">
+                          <div class="card-img">
+                            <img src="assets/img/image_5.jpg" alt="...">
+                          </div>
+                          <div class="card-body1">
+                            <h4 class="card-title">Inaugural General Assembly 2011</h4>
+                            <p> Lorem ipsum dolor sit amet.</p>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-stretch" data-aos="fade-up">
+                    <div class="card">
+                          <div class="card-img">
+                            <img src="assets/img/image_2.jpg" alt="...">
+                          </div>
+                          <div class="card-body2">
+                            <h4 class="card-title">Inaugural General Assembly 2011</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--================ End Gallery Area ================-->
+    <!--================ Start Counter Area ==============-->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="stats_heading align-items-center">
+                        <h1>About Us & Our Work</h1>
+                        <p>NECCSO strategy is to strengthen civil society’s advocacy influence in the education sector and serve as a network, coordinating the advocacy work of various organisations, to help contribute to the achievement of national education development plans, the Education for All (EFA) goals and the Sustainable Development Goals (SDGs) and those other conventions and plans of action dealing with education.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="counter-up">
+                        <div class="content">
+                            <div class="box">
+                                <div class="counter">2011</div>
+                                <div class="text">Established</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="counter-up">
+                        <div class="content">
+                            <div class="box">
+                                <div class="counter">40</div>
+                                <div class="text">Coalitions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="counter-up">
+                        <div class="content">
+                            <div class="box">
+                                <div class="counter">6</div>
+                                <div class="text">Projects/Programs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="counter-up">
+                        <div class="content">
+                            <div class="box">
+                                <div class="counter">20</div>
+                                <div class="text">Placeholder</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+    <!--================ End Counter Area ================-->
+    <!--================ End Background Area =============-->
+    <!--================ Start Goals Area ================-->
+    <section class="gaols" id="gaols">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 img-fluid bg-cover" style="background-image: url(/assets/img/gaol-pic_BW.jpg); min-height: 500px;"></div>
+                <div class="col-lg-3 middle">
+                    <div class="middle-text">
+                        <h1>Our Vision</h1>
+                        <p>
+                            NECCSO aims to enhance inclusive and relevant quality education for all Namibians.
+                        </p>
+                        <h1>Our Mission</h1>
+                        <p>NECCSO aims promote, enable and build capacity of Namibian Civil Society to advocate for policies and practices and an enabling environment to ensure access to quality lifelong and relevant education for all. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 left">
+                    <div class="left-text">
+                        
+                        <h1>General Objectives</h1>
+                        <h5>NECCSO programs, projects, campaigns and activities are based on the following objectives:</h5>
+                        <ul>
+                            <li>Develop and agree on a civil society policy advocacy agenda for the education sector.</li>
+                            <li>Undertake policy dialogues with government at all levels.</li>
+                            <li>Ensure that civil society is effectively represented on various government and statutory bodies dealing with education in various sectors.</li>
+                            <li>Undertake capacity building initiatives for members.</li>
+                            <li>Liaise with the local media to ensure activities of the coalition and education sector civil society in general are known locally and nationally.</li>
+                            <li>Promote and initiate policy analysis, research, documentation and knowledge creation to improve the education system.</li>
+                            <li>Mobilise resources and constructive engagement with the donor community and the corporate sector to solicit additional resources and their effective and efficient allocation and utilization.</li>
+                            <li>Facilitate co-operation with national; sub regional; regional and global networks in pursuit of its aims.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Goals Area ==================-->
+    <!--================ Start CTA Area ==================-->
+    <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+
+            <div class="cta-info text-center">
+                <h3>Need more information?</h3>
+                <p> Don't just sit there with unansweared questions, get in touch and receive more clarity on every aspect of our organisation.</p>
+                <a href="#" class="cta-btn ms-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Get in touch</span></a>
+            </div>
+
+        </div>
+    </section>
+    <!--================ End CTA Area ====================-->
+    <!--================ Start Framework Area ============-->
+    <section class="framework" id="framework">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6" style="background-color:#a0d6d3">
+                    <div class="frame_heading">
+                        <h1>Stratigic Framework</h1>
+                    </div>
+                    <div class="frame_body">
+                        <h3>Goal</h3>
+                        <p>To empower civil society actors in Namibia to advocate for quality and inclusive education for all Namibians.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Framework Area ==============-->
+    <!--================ Start Footer Area ===============-->
     <!--================ End Footer Area =================-->
     <!--================ Start Modal Area ================-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -123,11 +288,13 @@
                 <div class="modal-body p-0">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-4 bg-cover" style="background-image: url(/assets/img/contact.jpg); min-height: 300px;"></div>
+                            <div class="col-lg-4 bg-cover" style="background-image: url(/assets/img/gaol-pic_BW.jpg); min-height: 300px;"></div>
                             <div class="col-lg-8">
-                                <form action="" class="row p-lg-5 gy-3">
+
+                                <form class="row p-lg-5 gy-3 contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+
                                     <div class="col-12">
-                                        <h1>Have a project in mind?</h1>
+                                        <h1>Have something on your mind?</h1>
                                         <p>Let's talk about it.</p>
                                     </div>
                                     <div class="col-lg-6">
@@ -147,10 +314,11 @@
                                         <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Enter Message"></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="button" class="btn btn-brand">Send Message</button>
+                                        <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </form>
+
                             </div>
                         </div>
                     </div>
@@ -160,12 +328,25 @@
     </div>
     <!--================ End Modal Area ==================-->
     
+    <!--================ Start Back2Top Area =============-->
+    <a id="back2Top" data-toggle="tooltip" data-placement="left" title="Back to Top" href="#home">&#10148;</a>
+    <!--================ End Back2Top Area ===============-->
     <!--================ Start JavaScript Area ===========-->
     <script src='assets/js/jquery.min.js'></script>
     <script src='assets/js/bootstrap.bundle.min.js'></script>
     <script src='assets/js/script.js'></script>
     <script src='assets/js/main.js'></script>
+    <script src='/assets/js/scroll.js'></script>
+    <script src='/assets/js/counter.js'></script>
+    <script>
+        $(document).ready(function(){
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
     <!--================ End JavaScript Area =============-->
-
+    
 </body>
 </html>

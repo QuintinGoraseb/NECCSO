@@ -1,16 +1,14 @@
-/** Sections **/
-section {
+
+
+/** BG Image **/
+.hero {
+    background-image: $hero;
     position: relative;
     height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     text-transform: uppercase;
-}
-
-/** BG Image **/
-.hero {
-    background-image: $hero;
 
     .hero-inner {
         position: absolute;
@@ -26,7 +24,6 @@ section {
         }
         h2 {
             font-family: $din;
-            
             font-size: 50px;
             font-weight: 700;
             margin-bottom: 20px;

@@ -39,6 +39,13 @@
                 padding-bottom: 2px;
                 cursor: pointer;
 
+                a:hover {
+                    color: $prim-color !important;
+                }
+                a:active {
+                    color: $prim-color;
+                }
+
                 a::after {
                     content: '';
                     position: absolute;
