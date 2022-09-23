@@ -28,12 +28,13 @@ $grotesk:"Familjen Grotesk", sans-serif;
 $bg-color: #7a9eaf;
 $bg-color2: rgb(248,248,248);
 $prim-color:  #7a9eaf;
-$sec-color:#fff;
+$sec-color: #465761;
 $text-color: rgb(66,71,76);
 $black: #000;
 $white: #fff;
 $gray-scale: #858585;
 $dark-gray: #686868;
+$lime: #a0d6d3;
 
 /** Images **/
 $logo: url('/assets/img/logo.png');
@@ -128,6 +129,9 @@ $hero: url('/assets/img/class_dark.jpg');
   .about_left_text {
     padding: .5rem !important;
   }
+  .count {
+    margin-bottom: -5rem;
+  }
   .stats_heading {
     h1 {
       padding-bottom: 1rem;
@@ -205,13 +209,13 @@ $hero: url('/assets/img/class_dark.jpg');
 
   /** CTA **/
 .cta {
-    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/class_dark.jpg") fixed center center;
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/neccso-pics/cta-pic-bw.jpg") fixed center center;
     background-size: cover;
     padding: 60px 0;
   }
   
   .cta h3 {
-    color: $white;
+    color: #a0d6d3;
     font-size: 28px;
     font-weight: 700;
     padding-bottom: 1rem;
@@ -221,7 +225,7 @@ $hero: url('/assets/img/class_dark.jpg');
   
   .cta p {
     color: $white;
-    font-size: 18px;
+    font-size: 20px !important;
     font-family: $times;
   }
   
@@ -246,46 +250,51 @@ $hero: url('/assets/img/class_dark.jpg');
     color: $text-color;
   }
   
-  /** Policies **/
-  .privacy {
-      margin: 5rem 0;
-    
-      .inline-area {
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        color: $prim-color;
-    
-        h1 {
-          font-family: $cormorant;
-          color: $prim-color;
-        }
-    
-        h2 {
-          font-family: $cormorant;
-          color: $prim-color;
-        }
-    
-        p {
-          font-family: $gelasio;
-          font-size: 16px;
-          color: $text-color;
-          text-align: justify;
+/** Policies **/
+.privacy {
+    padding: 5rem 0;
+    background: $bg-color2;
   
-          strong {
-            letter-spacing: 1px;
-          }
-        }
-    
-        a {
-          color: $prim-color;
+    .inline-area {
+      padding: 1rem;
+      background: $bg-color;
+      border-radius: 10px;
+      color: $prim-color;
+  
+      h1 {
+        font-family: $cormorant;
+        color: $white;
+      }
+  
+      h2 {
+        font-family: $cormorant;
+        color: $white;
+      }
+  
+      p {
+        font-family: $gelasio;
+        font-size: 16px;
+        color: $black;
+        text-align: justify;
+
+        strong {
+          letter-spacing: 1px;
         }
       }
+  
+      ul {
+        font-family: $gelasio;
+        font-size: 16px;
+        color: $black;
+        text-align: justify;
+      }
     }
+}
   
   /** 404 Page **/
     .p_404 {
-      margin: 5rem 0;
+      padding: 5rem 0;
+      background: $bg-color;
       .page-404 {
         text-align: center;
     
@@ -293,7 +302,7 @@ $hero: url('/assets/img/class_dark.jpg');
           font-family: $cormorant;
           font-weight: 700;
           font-size: 220px;
-          color: $prim-color;
+          color: $white;
           line-height: 220px;
         }
     
@@ -302,7 +311,7 @@ $hero: url('/assets/img/class_dark.jpg');
           font-weight: 400;
           padding: 2rem 0;
           font-size: 70px;
-          color: $prim-color;
+          color: $white;
           line-height: 70px;
         }
     
@@ -310,7 +319,7 @@ $hero: url('/assets/img/class_dark.jpg');
           font-family: $gelasio;
           text-align: justify;
           font-size: 16px;
-          color: $text-color;
+          color: $black;
         }
       }
     }
@@ -340,7 +349,6 @@ $hero: url('/assets/img/class_dark.jpg');
 
       p {
         font-size: 18px;
-        text-transform: uppercase;
         font-weight: 800;
         color: #3d4f57;
         font-family: $cormorant;
@@ -358,3 +366,66 @@ $hero: url('/assets/img/class_dark.jpg');
       border-color: $prim-color;
     }
   }
+
+/** Program Modal **/
+.prog_modal {
+    
+  .modal-body {
+    border: none;
+
+    .info {
+      padding-top: 3rem;
+
+      h2 {
+        font-family: $playfair;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid #6d8e9d;
+      }
+    }
+
+    .info_text {
+      padding-top: 3rem;
+
+      p {
+        font-family: $times !important;
+        color: $white !important;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: justify !important;
+      }
+
+      h5 {
+        padding-top: 1rem;
+        font-family: $playfair;
+      }
+
+      ul {
+        padding-top: 2rem;
+        font-family: $times !important;
+        color: $white !important;
+        font-weight: normal;
+        font-size: 17px !important;
+        text-align: justify !important;
+      }
+    }
+
+    .right_img {
+
+      img {
+        padding-top: 3rem;
+      }
+    }
+
+    .info_text2 {
+      padding-top: 2rem;
+
+      p {
+        font-family: $times !important;
+        color: $white !important;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: justify !important;
+      }
+    }
+  }
+}

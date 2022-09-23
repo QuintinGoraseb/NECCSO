@@ -60,8 +60,8 @@
 .cta-btn {
   border-radius: 0;
   background-color: transparent;
-  border: 1px solid $bg-color !important;
-  color: $bg-color !important;
+  border: 1px solid #a0d6d3 !important;
+  color: #a0d6d3 !important;
   text-align: center;
   font-size: 16px;
   padding: 9px 10px;
@@ -148,4 +148,84 @@
     &:hover .hover {
         transform: translateY(0);
     }
+}
+
+/** Submit_btn **/
+.submit_btn{
+  display: inline-block;
+  background: transparent;
+  color: $white;
+  font-family: $playfair;
+  width: 148px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid $white;
+  line-height: 48px;
+  border-radius: 3px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover{
+    background: $white;
+    color: $bg-color;
+  }
+}
+
+/** close_btn **/
+.close_btn{
+  display: inline-block;
+  background: $text-color;
+  color: $white;
+  font-family: $playfair;
+  width: 148px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid $text-color;
+  line-height: 48px;
+  border-radius: 3px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover{
+    background: transparent;
+    color: $text-color;
+  }
+}
+
+/** Program btn **/
+.program_btn {
+  font-family: $times;
+  color: $bg-color !important;
+  i {
+    color: $bg-color;
+  }
+}
+
+/** Program Modal close_btn **/
+.M_close_btn{
+  display: inline-block;
+  background: $sec-color;
+  color: $white;
+  font-family: $playfair;
+  width: 148px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid $sec-color;
+  line-height: 48px;
+  border-radius: 3px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  &:hover{
+    background: $bg-color;
+    border: 1px solid $white;
+    color: $white;
+  }
 }

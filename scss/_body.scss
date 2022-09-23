@@ -133,7 +133,7 @@ a {
       width: calc(100% + 60px);
       margin-left: -30px;
       overflow: hidden;
-      z-index: 9;
+      z-index: 1;
       border-radius: 0;
 
       img {
@@ -143,7 +143,7 @@ a {
     }
 
     .card-body {
-      z-index: 10;
+      z-index: 2;
       background: #7a9eaf;
       border-top: 4px solid #fff;
       padding: 30px;
@@ -178,7 +178,7 @@ a {
       }
     }
     .card-body1 {
-      z-index: 10;
+      z-index: 2;
       background: #6d8e9d;
       border-top: 4px solid #fff;
       padding: 30px;
@@ -213,7 +213,7 @@ a {
       }
     }
     .card-body2 {
-      z-index: 10;
+      z-index: 2;
       background: #617e8c !important;
       border-top: 4px solid #fff;
       padding: 30px;
@@ -331,6 +331,7 @@ a {
   .middle {
     background-color: #a0d6d3;
     .middle-text {
+      padding: 0 1rem;
       color: $black;
       h1 {
         padding-top: 2rem;
@@ -360,7 +361,7 @@ a {
         letter-spacing: 1.2px;
         margin-bottom: 20px;
       }
-      p {
+      ul {
         font-family: $times;
         font-size: 17px;
         text-align: justify !important;
@@ -369,23 +370,290 @@ a {
 
   }
 }
+
 /** Strategic Framework **/
 .framework {
+  padding: 5rem 0;
+  background-color: $bg-color2;
 
-  .frame_heading {
-    h1 {
-      font-family: $playfair;
-      color: $black;
-      padding-top: 5rem;
+  .frame1 {
+    background: $sec-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .frame1_heading {
+      padding: 0 1rem;
+      h1 {
+        font-family: $playfair;
+        color: $black;
+      }
+      p {
+        font-family: $times;
+        font-size: 17px;
+        text-align: justify !important;
+      }
     }
   }
-  .frame_body {
-    align-content: center !important;
-    align-items: center !important;
-    h3 {
-      font-family: $playfair;
-      color: $black;
+
+  .frame2 {
+    padding: 2rem;
+    .frame2_heading {
+      h1 {
+        font-family: $playfair;
+        color: $bg-color;
+        text-align: center;
+      }
+      ul {
+        font-family: $times;
+        color: $black;
+        font-size: 17px;
+        text-align: justify !important;
+      }
     }
+    .frame2_img {
+      margin-top: 2rem;
+    }
+    .frame2_prog {
+      margin-top: 2rem;
+      
+      h1 {
+        font-family: $playfair;
+        color: $bg-color;
+        text-align: center;
+      }
+      ul {
+        font-family: $times;
+        color: $black;
+        font-size: 17px;
+        text-align: justify !important;
+      }
+    }
+  }
+
+  .frame3 {
+    background: $bg-color;
+  }
+}
+
+/** Projects **/
+.projects {
+  padding: 0 0 5rem 0 !important;
+  background: $bg-color2;
+
+  .hr_line {
+    padding: 3rem 0;
+    color: $sec-color;
+    font-size: 2px;
+  }
+
+  .projects_heading {
+    h1 {
+      font-family: $playfair;
+      color: $bg-color;
+      text-align: center;
+    }
+    h5 {
+      font-size: 17px;
+      font-weight: 100;
+      letter-spacing: 3px;
+      color: #ccc;
+      text-align: center;
+    }
+  }
+
+  .projects_inner {
+    padding-top: 2rem;
+
+    p {
+      color: $black;
+      font-size: 17px;
+      font-family: $times;
+      text-align: justify !important;
+    }
+  }
+
+  .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    background: $white;
+
+    span {
+      display: block;
+      font-family: $cormorant;
+      font-size: 28px;
+      font-weight: 700;
+      color: $bg-color;
+    }
+
+    h4 {
+      font-family: $cormorant;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 0;
+      margin: 20px 0;
+      color: $bg-color;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: $times;
+      color: $bg-color;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+    }
+
+    &:hover {
+      background: $bg-color;
+      padding: 30px 30px 70px 30px;
+      box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+    }
+  }
+
+  .box-1 {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.3s;
+    background: $bg-color;
+
+    span {
+      display: block;
+      font-family: $cormorant;
+      font-size: 28px;
+      font-weight: 700;
+      color: $white;
+    }
+
+    h4 {
+      font-family: $cormorant;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 0;
+      margin: 20px 0;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: $times;
+      color: $white;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &:hover {
+      background: $white;
+      padding: 30px 30px 70px 30px;
+      box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+    }
+  }
+}
+
+.projects .box:hover span,
+.projects .box:hover h4,
+.projects .box:hover p {
+  color: $white !important;
+}
+
+.projects .box-1:hover span,
+.projects .box-1:hover h4 {
+  color: $bg-color !important;
+}
+
+.projects .box-1:hover p {
+  color: $bg-color !important
+}
+
+/** Slide Show **/
+
+/** Board of Directors **/
+.board {
+  background: $sec-color;
+  padding: 5rem 0;
+  align-items: center !important;
+  align-content: center !important;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
   }
 }
 
@@ -421,84 +689,109 @@ a {
   
   }
   
-  /** Footer Page **/
-  footer {
+/** Footer Page **/
+footer {
+  background: $sec-color !important;
 
-    h6 {
-        font-weight: 500;
-        letter-spacing: 1px;
-        margin-bottom: 16px;
-        font-size: 20px;
-    }
+  h6 {
+    font-family: $gelasio !important;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      font-size: 20px;
+  }
 
-    ul, li, a {
-        color: rgba(255, 255, 255, 0.6);
-        padding: 0;
+  ul, li, a {
+      list-style: none !important;
+      color: rgba(255, 255, 255, 0.6) !important;
+      padding: 0;
+      font-family: $times;
+      font-size: 18px;
 
-        &:hover {
-            color: $prim-color;
-        }
-    }
+      &:hover {
+          color: #f5f5f5 !important;
+      }
+  }
 
-    p {
-        color: rgba(255, 255, 255, 0.6);
-        text-align: justify;
-    }
+  p {
+      color: rgba(255, 255, 255, 0.6) !important;
+      text-align: justify;
+      font-family: $times;
+      font-size: 18px;
+  }
 
-    .footer-top {
-        background: url('/assets/img/footer.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        padding: 50px 0;
-    
-        .navbar-brand {
-            font-size: 20px;
-    
-            .logo-footer {
-                margin-bottom: 16px;
+  .footer-top {
+      background: url('/assets/img/footer.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 50px 0;
+  
+      .navbar-brand {
+          font-size: 20px;
+  
+          .logo-footer {
+              margin-bottom: 16px;
+          }
+      }
+  
+      .ftco-footer-social {
+        li {
+          list-style: none;
+          margin: 0 10px 0 0;
+          display: inline-block;
+          a {
+            height: 50px;
+            width: 50px;
+            display: block;
+            float: left;
+            background: rgba($white, 0.1) !important;
+            border-radius: 50%;
+            position: relative;
+            span {
+              position: absolute;
+              font-size: 26px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
             }
-        }
-    
-        .social-footer i {
-            font-size: 30px;
-            color: $prim-color !important;
-    
             &:hover {
-                color: $text-color !important;
+              color: $white !important;
             }
+          }
         }
-    }
+      }
+  }
 
-    .footer-bottom {
+  .footer-bottom {
 
-        .credit {
-            text-align: center !important;
-        
-            p {
-                font-size: 16px;
-                line-height: 24px;
-                font-family: $gelasio;
-                color: $text-color;
-                margin: 10px 0;
-                text-align: justify !important;
-                text-align: center !important;
-                a {
-                    font-family: $playfair;
-                    font-weight: 500;
-                    letter-spacing: 1px;
-                    color: $prim-color;
-                    font-size: bolder;
-                    &:hover {
-                    color: $text-color;
-                    }
-                }
-                & + p {
-                    margin-bottom: 0px;
-                }
-            }
-        }
-    }
+      .credit {
+          text-align: center !important;
+      
+          p {
+              font-size: 16px;
+              line-height: 24px;
+              font-family: $gelasio;
+              color: $text-color;
+              margin: 10px 0;
+              text-align: justify !important;
+              text-align: center !important;
+              a {
+                  font-family: $playfair;
+                  font-weight: 500;
+                  letter-spacing: 1px;
+                  color: $lime !important;
+                  font-size: bolder;
+                  &:hover {
+                  color: $white !important;
+                  }
+              }
+              & + p {
+                  margin-bottom: 0px;
+              }
+          }
+      }
+  }
 }
 
 
@@ -518,8 +811,8 @@ a {
   position: fixed;
   bottom: 50px;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: $text-color !important;
+  background-color: rgba(255, 255, 255, .1);
+  color: $lime !important;
   text-align: center;
   font-size: 30px;
   text-decoration: none;

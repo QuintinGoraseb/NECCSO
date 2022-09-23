@@ -13,8 +13,10 @@
 
     <!-- Fonts -->
     <link href="http://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
     <!-- Font-awesome -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://kit.fontawesome.com/db08181aad.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -24,6 +26,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/vendors/linericon/style.css">
 
     
 
@@ -37,14 +43,15 @@
     <div id="mobile-menu" class="mobile-main-menu">
         <ul>
             <li class="mobile-only"><a href="#about p_120" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Background</a></li>
-            <li class="mobile-only"><a href="#">Organisational Goals</a></li>
+            <li class="mobile-only"><a href="#">Objectives</a></li>
             <li class="mobile-only"><a href="#">Strategic Framwork</a></li>
-            <li class="mobile-only"><a href="#">Projects & Programs</a></li>
+            <li class="mobile-only"><a href="#">Programmes</a></li>
+            <li class="mobile-only"><a href="#">Gallery</a></li>
+            <li><a href="board.html">NECCSO Board of Directors</a></li>
+            <li><a href="assets/reports/NECCSO Trust Membership List.doc 2014.pdf" target=”_blank”>NECCSO Trust Membership List</a></li>
+            <li><a href="assets/reports/NECCSO Progress Report December2014.pdf" target=”_blank”>Progress Report (December 2014)</a></li>
+            <li><a href="assets/reports/Organisational profile.pdf" target=”_blank”>Organisational Profile</a></li>
             <li class="mobile-only"><a href="#">Get in touch</a></li>
-            <li><a href="#">Annual Report</a></li>
-            <li><a href="#">NECCSO Members</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
         </ul>
     </div>
     <!--================ Start Navbar Area ===============-->
@@ -57,9 +64,10 @@
         <nav class="main-menu">
             <ul>
                 <li><a href="#about p_120" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Background</a></li>
-                <li><a href="#">Organisational Goals</a></li>
+                <li><a href="#">Objectives</a></li>
                 <li><a href="#">Strategic Framwork</a></li>
-                <li><a href="#">Projects & Programs</a></li>
+                <li><a href="#">Programmes</a></li>
+                <li><a href="#">Gallery</a></li>
                 <li><a href="#" class="get-in-touch-btn ms-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Get in touch</span></a></li>
             </ul>
         </nav>
@@ -167,7 +175,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 count col-lg-3">
                     <div class="counter-up">
                         <div class="content">
                             <div class="box">
@@ -177,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 count">
                     <div class="counter-up">
                         <div class="content">
                             <div class="box">
@@ -187,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 count">
                     <div class="counter-up">
                         <div class="content">
                             <div class="box">
@@ -265,21 +273,210 @@
     <section class="framework" id="framework">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6" style="background-color:#a0d6d3">
-                    <div class="frame_heading">
-                        <h1>Stratigic Framework</h1>
-                    </div>
-                    <div class="frame_body">
-                        <h3>Goal</h3>
+                <div class="col-lg-3 frame1">
+                    <div class="frame1_heading">
+                        <h1>Strategic<br>Framework</h1>
                         <p>To empower civil society actors in Namibia to advocate for quality and inclusive education for all Namibians.</p>
                     </div>
                 </div>
-                <div class="col-lg-6"></div>
+                <div class="col-lg-8 frame2">
+                    <div class="frame2_heading">
+                        <h1>Strategic Objectives</h1>
+                        <ul>
+                            <li>Support, through initiating, coordinating and monitoring, civil society advocacy campaigns to ensure accountability towards national and international commitments towards accessible quality, inclusive and livelong education for all.</li>
+                            <li>Advocate for increase funding for education and monitor education budgets to ensure effective and efficient allocation and utilisation of resources.</li>
+                            <li>Building the institutional capacity and profile of NECCSO and its membership to become strong, vibrant and responsive organizations to initiate, coordinate and monitor civil society advocacy actions and programs in the education sector.</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-sm-6 frame2_img text-center">
+                          <img src="assets/img/neccso-pics/strategy.jpg" class="img-fluid" alt="strategic_img">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 frame2_prog text-center">
+                          <h1>Program Areas</h1>
+                          <ul>
+                              <li>Policy Advocacy and Lobbying</li>
+                              <li>Budget Tracking, Analysis and Advocacy</li>
+                              <li>Research and Information Documentation </li>
+                              <li>Educational Awareness Campaigns </li>
+                              <li>Strengthening Governance and Accountability in the Education Sector</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg frame3"></div>
             </div>
         </div>
     </section>
     <!--================ End Framework Area ==============-->
+    <!--================ Start Projects Area =============-->
+    <section id="projects" class="projects">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="projects_heading">
+                        <h1>Projects & Programmes</h1>
+                        <h5>2011 - 2014</h5>
+                    </div>
+                    <div class="projects_inner">
+                        <p>NECCSO had the challenging tasks to coordinate civil society inputs into the National Education Conference of June 2011 while in its infancy. Initially, it was intended to formally launch NECCSO just before National Education Conference but it was tactically agreed to delay formal launch to maximize all energies towards stronger civil society influence at this historic national gathering on education.</p>
+                        <p>The initial work of the Steering Committee and the activities leading up to the formal launch was financially supported by the Open Society Initiative for Southern Africa (OSISA) through the ANCEFA Regional Office for Southern Africa in Lusaka with a grant of approximately U$25 000 during 2011 and 2012. As a follow up to this partnership, NECCSO was successful in getting a further grant from OSISA for the Budget Advocacy Project towards the end of 2012.</p>
+                        <p>Immediately after its launch, NECCSO engaged in partnership with Ministry of Education and UNICEF and other civil society actors and the Social Accountability in Education and School Governance Project was initiated out of this partnership. This project that formerly started at the beginning of 2012 was preceded by a “National Workshop on Governance and Accountability in the Education Sector – a civil society perspective”.</p>
+                        <p>NECCSO also collaborated with the Urban Trust of Namibia for the implementation of a UNICEF supported project aimed at developing an advocacy issues paper for safer and violence free schools in Namibia. Two consultative meetings were held in December 2013 and February 2014 with key stakeholders to discuss the draft advocacy issues paper drafted with technical assistance by the Centre for Justice and Crime Prevention based in Cape Town, South Africa.</p>
+                        <p>The launching General Assembly of NECCSO on 6 September 2011 tasked the incoming leadership to finalise a Strategic Plan. Based on the framework provided by the General Assembly, a draft Strategic Plan framework was designed and shared with various stakeholders for inputs and for initiating partnership discussions. The final strategic plan was discussed and approved by various Board meetings in January and April 2014.</p>
+                    </div>
+                    <div class="hr_line">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="row">
+  
+                <div class="col-lg-4">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                        <span>01</span>
+                        <h4>Social Accountability in Education Project</h4>
+                        <p>Social Accountability in Education and School Governance Project was based on a unique multi-stakeholder partnership between UNICEF Namibia and Ministry of Education in...</p>
+                        <a href="#" class="btn program_btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#programOne"><i class="bi bi-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box-1" data-aos="zoom-in" data-aos-delay="300">
+                        <span>02</span>
+                        <h4>National Workshop on Improving Governance and Accountability</h4>
+                        <p>A national workshop was held on 21 and 22 November 2011 to address issues on improving governance and accountability in the education sector. This workshop was...</p>
+                        <a href="#" class="btn text-dark program_btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#programTwo"><i class="bi bi-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                        <span>03</span>
+                        <h4>Budget Advocacy Project</h4>
+                        <p>NECCSO was implementing this project with financial and technical assistance from the Open Society Initiative for Southern Africa (OSISA). The overall goal of the project is to ensure transparency and accountability in the management of education budgets in...</p>
+                        <a href="#" class="btn text-dark program_btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#programThree"><i class="bi bi-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+  
+            </div>
+
+            <div class="row mt-5">
+  
+                <div class="col-lg-4">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                        <span>04</span>
+                        <h4>Participation in Annual Education Sector Review Meeting</h4>
+                        <p>In addition to the above mentioned training workshops, NECCSO also lobbied for additional representatives of civil society organisations during the Annual Education...</p>
+                        <a href="#" class="btn text-dark program_btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#programFour"><i class="bi bi-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box-1" data-aos="zoom-in" data-aos-delay="300">
+                        <span>05</span>
+                        <h4>Review of the Education Act</h4>
+                        <p>Namibia Education Coalition for Civil Society Organizations (NECCSO) received a grant of 50,000.00 US Dollars from Open Society Initiative of South Africa to run a project on an advocacy campaign for amendments to the Education Act of 2001...</p>
+                        <a href="#" class="btn text-dark program_btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#programFive"><i class="bi bi-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                        <span>06</span>
+                        <h4>Comprehensive Sexuality Education: Community Engagement</h4>
+                        <p>In 2013 UNESCO, with support from SIDA-NORAD, initiated a regional programme across Eastern and Southern African (ESA) countries to strengthen sexual and...</p>
+                        <a href="#" class="btn text-dark program_btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#programSix"><i class="bi bi-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+  
+            </div>
+  
+        </div>
+    </section>
+    <!--================ End Projects Area ===============-->
+    <!--================ Start Slider Area ===============-->
+    <section class="slider" id="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Slider Area =================-->
     <!--================ Start Footer Area ===============-->
+    <footer>
+        <div class="footer-top bg-dark">
+            <div class="container">
+                <div class="row y-4">
+                    <div class="col-lg-4">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="/assets/img/logo.png" class="logo-footer" style="width: unset;" alt="Logo" width="44" height="38" class="d-inline-block align-text-top">
+                        </a>
+                        <p>NECCSO strategy is to strengthen civil society’s advocacy influence in the education sector and serve as a network, coordinating the advocacy work of various organisations, to help contribute to the achievement of national education development plans.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate">
+                                <a href="404.html"><span class="fa-brands fa-linkedin-in"></span></a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="404.html"><span class="fa-brands fa-facebook-f"></span></a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="404.html"><span class="fa-brands fa-instagram"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 offset-lg-2">
+                        <h6>Useful Links:</h6>
+                        <ul>
+                            <li><a href="#about">Background</a></li>
+                            <li><a href="#objectives">Objectives</a></li>
+                            <li><a href="#strategic">Strategic Framework</a></li>
+                            <li><a href="#programmes">Programmes</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Get in touch</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h6>Programmes:</h6>
+                        <ul>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#programOne">Social Accountability in Education</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#programTwo">Improving Governance & Accountability</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#programThree">Budget Advocacy</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#programFour">Annual Education Sector Review</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#programFive">Review of the Education Act</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#programSix">Comprehensive Sexuality Education</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h6>Organisation:</h6>
+                        <ul>
+                            <li><a href="board.html">Board of Directors</a></li>
+                            <li><a href="assets/reports/NECCSO Trust Membership List.doc 2014.pdf" target=”_blank”>NECCSO Trust Membership List</a></li>
+                            <li><a href="assets/reports/NECCSO Progress Report December2014.pdf" target=”_blank”>Progress Report (December 2014)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="credit">
+                            <p>
+                            Copyright<span class="word"> &copy;</span> <script>document.write(new Date().getFullYear());</script>. All rights reserved. <a href="terms.html">Terms of Use</a> | 
+        <a href="privacy.html">Privacy Policy</a><br> Developed by: <a href="https://ebu.com.na" target="_blank">EBU Computer Solutions cc<span class="word">.</span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!--================ End Footer Area =================-->
     <!--================ Start Modal Area ================-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -295,7 +492,7 @@
 
                                     <div class="col-12">
                                         <h1>Have something on your mind?</h1>
-                                        <p>Let's talk about it.</p>
+                                        <p>LET'S TALK ABOUT IT.</p>
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="exampleFormControlInput1" class="form-label">First Name</label>
@@ -314,8 +511,8 @@
                                         <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Enter Message"></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" value="submit" class="submit_btn">Send Message</button>
+                                        <button type="button" class="close_btn" data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </form>
 
@@ -327,6 +524,246 @@
         </div>
     </div>
     <!--================ End Modal Area ==================-->
+    <!--================ Start Program Modal Area ========-->
+    <!--1-->
+    <div class="modal prog_modal fade" id="programOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="info">
+                                    <h2>Social Accountability in Education Project</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info_text">
+                                    <p>Social Accountability in Education and School Governance Project was based on a unique multi-stakeholder partnership between UNICEF Namibia and Ministry of Education in collaborating with a consortium of Civil Society Organizations (CSOs) under the auspices of the Namibia Education Coalition for Civil Society Organizations (NECCSO) and the Urban Trust of Namibia (UTN). Other CSO partners included, Namibia Institute for Democracy (NID) and the Legal Assistance Centre (LAC).</p>
+                                    <p>This partnership was aimed at strengthening the role of CSOs in the education sector in institutional capacity and project management general, but more specifically to lay the foundation for proactive engagement in promoting accountability and effective community involvement in school governance. The overall goal of the project was the strengthening of social accountability and governance systems within the education sector.</p>
+                                    <p>NECCSO represented the civil society partners in the National Project Steering Committee chaired by the Directorate for Program Quality Assurance: Ministry of Education with representation from UNICEF, UNESCO and the Directors from the two pilot regions namely Hardap and Ohangwena.</p>
+                                    <p>The CSO part of the project was jointly managed by the Namibia Education Coalition of Civil Society Organizations (NECCSO) and the Urban Trust of Namibia (UTN). Project administration and financial management was handled by the UTN.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 right_img">
+                                <img src="assets/img/neccso-pics/strategy.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="button" class="M_close_btn" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--2-->
+    <div class="modal prog_modal fade" id="programTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="info">
+                                    <h2>National Workshop on Improving Governance and Accountability</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info_text">
+                                    <p>A national workshop was held on 21 and 22 November 2011 to address issues on improving governance and accountability in the education sector. This workshop was organised by NECCSO in collaboration with the UTN and UNICEF and facilitated by Professor Joseph Diescho, Herbert Jauch and John Nakuta.</p>
+                                    <p>This workshop attended by more than sixty participants from all over Namibia was officially opened by Dr David Namwandi, than the Deputy Minister of Education and key facilitators included Professor Joseph Diescho, John Nakuta from University of Namibia (UNAM) Human Rights Centre and Herbert Jauch an Independent Labour expert and activist. One of the key recommendations from this workshop was that a project be initiated to improve accountability within the education sector by ensuring increase stakeholder-community involvement in education.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 right_img">
+                                <img src="assets/img/neccso-pics/strategy.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="button" class="M_close_btn" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--3-->
+    <div class="modal prog_modal fade" id="programThree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="info">
+                                    <h2>Budget Advocacy Project</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info_text">
+                                    <p>NECCSO was implementing this project with financial and technical assistance from the Open Society Initiative for Southern Africa (OSISA). The overall goal of the project is to ensure transparency and accountability in the management of education budgets in Namibia.</p>
+                                    <h5>The Budget Advocacy Project were based on two main objectives namely:</h5>
+                                    <ul>
+                                        <li>To build the capacity of the Namibia Educational Coalition for Civil Society Organisations (NECCSO) in resource monitoring and budget tracking of the education sector</li>
+                                        <li>To advocate for transparency and accountability in the use and management of education resources through a budget tracking exercise.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 right_img">
+                                <img src="assets/img/neccso-pics/strategy.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="button" class="M_close_btn" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--4-->
+    <div class="modal prog_modal fade" id="programFour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="info">
+                                    <h2>Participation in Annual Education Sector Review Meeting</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info_text">
+                                    <p>In addition to the above mentioned training workshops, NECCSO also lobbied for additional representatives of civil society organisations during the Annual Education Sector Review. Hence, civil society organisations active in the education sector were once again invited through NECCSO to participate in the 3 dayAnnual Education Sector Review Workshops.</p>
+                                    <p>Different sectors in education presented a status report on their sectors, budget allocation, utilisation of funds, as well as funding gaps. Presentations also included targets in the various sectors, progress in achieving those targets, and key challenges related to inadequate funding. NECCSO was also invited to make a presentation during these annual education reviews.</p>
+                                    <p>Participation in these Annual Education Sector Review meetings provided an opportunity for civil society organizations to understand the key programs and targets in each sector, the competing challenge of resource allocation within the various sector of education and between education, and other national development priorities such as health, housing, sanitation and poverty alleviation.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 right_img">
+                                <img src="assets/img/neccso-pics/strategy.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="button" class="M_close_btn" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--5-->
+    <div class="modal prog_modal fade" id="programFive" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="info">
+                                    <h2>Review of the Education Act</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info_text">
+                                    <p>Namibia Education Coalition for Civil Society Organizations (NECCSO) received a grant of 50,000.00 US Dollars from Open Society Initiative of South Africa to run a project on an advocacy campaign for amendments to the Education Act of 2001. Additional funding to the value of N$ 100,000.00 was obtained from NAMPOWER to boost the project.</p>
+                                    <p>The need for NECCSO to fully partake in this initiate emanated from the need by various organisations involved in the education sector, including the civil society which have observed that the Education Act No. 16 of 2001 had serious shortcomings in addressing issues in education properly. This had wide-ranging implications as there was no legal basis for many of the policies that the Ministry of Education, Arts and Culture (MoEAC) wanted to implement. It has also emerged that the Ministry would first make amendments to the Act if they wanted to pass a specific policy.  This made the Education Act No. 16 of 2001 of Namibia burdened with more amendments than the actual Act itself. Researchers always had to have a copy of amendments and the Act if they wanted to interpret the Act or policies.</p>
+                                    <p>In light of the above mentioned the Ministry of Education has embarked upon a campaign to amend Education Act No. 16 of 2001. This exercise was initiated by the Ministry through the appointment of a consultant supported by UNICEF. It was also imperative that a National Steering Committee be appointed which comprised of all stakeholders in education. NECCSO was part of this National Steering Committee. Although NECCSO was part of this committee.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 right_img">
+                                <img src="assets/img/neccso-pics/strategy.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="info_text2">
+                                    <p>NECCSO was convinced that the civil society consultations should be conducted parallel to the national consultations and submit a position paper to the Ministry in order to ensure that pertinent issues should either be addressed as part of the new act or in the guidelines and regulations of the Act.  NECCSO therefore obtained support from OSISA to initiate this process. Therefore, the overall goal of the project was to undertake a review on the implementation of the current Education Act, undertake consultations and produce a civil society position paper targeting the Ministry of Education and law makers.</p>
+                                    <p>In order to achieve this NECCSO undertook countrywide consultations with civil society and parent representatives on school boards and school communities for review of Education Act and for inputs into the new Education Act.  Literature review was done in SADC education legislation and elsewhere and best practices were proposed for consideration by Namibian lawmakers.</p>
+                                    <p>These consultative platforms were also used to explore the need and feasibility of forming a parents’ association or a network of parents on school governing structures to provide a representative organisation for parents as key stakeholders in education.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="button" class="M_close_btn" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--6-->
+    <div class="modal prog_modal fade" id="programSix" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="info">
+                                    <h2>Comprehensive Sexuality Education: Community Engagement</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info_text">
+                                    <p>In 2013 UNESCO, with support from SIDA-NORAD, initiated a regional programme across Eastern and Southern African (ESA) countries to strengthen sexual and reproductive health and HIV prevention amongst children and young people through promoting Comprehensive Sexuality Education (CSE). </p>
+                                    <h5>The programme’s main objectives were:</h5>
+                                    <ul>
+                                        <li>To secure high level commitment to improving comprehensive knowledge on SRH, through sexuality and HIV prevention education.</li>
+                                        <li>To increase capacity of key players in the education sector to plan, manage and monitor comprehensive sexuality education at all levels of the school system.</li>
+                                        <li>To strengthen the quality of CSE curricula to ensure they are evidence-based, gender transformative and age-and culturally-appropriate.</li>
+                                        <li>To strengthen the implementation of CSE curricula through the development of a confident and well trained workforce.</li>
+                                        <li>To improve community engagement in young people’s access to CSE and services.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 right_img">
+                                <img src="assets/img/neccso-pics/strategy.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="info_text2">
+                                    <p>In order to ensure full support for comprehensive sexuality education there was an urgent need to engage with and address the concerns of key gatekeepers at the state and community level, from policy makers to the religious community to garner their support in the creation of an enabling environment for the provision of CSE.</p>
+                                    <p>UNESCO recognises the importance of involving parents and community members when addressing a complex issue such as sexuality education. The involvement of parent associations, community and religious leaders in the planning process can increase understanding and support for the programmes as parents, guardians and community gatekeepers understand the benefits of sexuality education for children and young people. Well planned communication between schools, parents, Ministry of Education, Arts and Culture and the community through the media, parents’ meetings and public meetings can be a useful tool to build support and ensure coherence between the messages and attitudes being taught in school and what young people learn from home.</p>
+                                    <p>Against this background, UNESCO developed a CSE Community Engagement Toolkit to promote community engagement in children and young people’s access to CSE and services. CSOs in different countries, including Namibia were trained in the utilisation of the toolkit, to support the roll out at country level.</p>
+                                    <p>NECSSO as one of the NGOs that received training on this toolkit, was supported by UNESCO to roll out the toolkit in the different communities in Namibia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="button" class="M_close_btn" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================ End Program Modal Area ==========-->
     
     <!--================ Start Back2Top Area =============-->
     <a id="back2Top" data-toggle="tooltip" data-placement="left" title="Back to Top" href="#home">&#10148;</a>
@@ -338,12 +775,18 @@
     <script src='assets/js/main.js'></script>
     <script src='/assets/js/scroll.js'></script>
     <script src='/assets/js/counter.js'></script>
+    <script src='/assets/js/slider.js'></script>
     <script>
         $(document).ready(function(){
             $(".counter").counterUp({
                 delay: 10,
                 time: 1200
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
     <!--================ End JavaScript Area =============-->
