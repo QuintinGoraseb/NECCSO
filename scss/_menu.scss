@@ -1,7 +1,7 @@
 /** Header **/
 .main-header {
     position: fixed;
-    top: 5px;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 3;
@@ -44,7 +44,7 @@
                     color: $prim-color !important;
                 }
                 a:active {
-                    color: $prim-color;
+                    color: $prim-color !important;
                 }
 
                 a::after {
@@ -73,7 +73,7 @@
 /** Hamburger Menu **/
 .hamburger {
     position: fixed;
-    top: 40px;
+    top: 35px;
     right: 20px;
     z-index: 10;
     cursor: pointer;

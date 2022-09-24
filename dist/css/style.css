@@ -458,7 +458,7 @@ a {
 /** Index Page **/
 /* Background */
 .about {
-  margin-top: 5rem;
+  padding-top: 7rem;
   background: #7a9eaf;
 }
 .about .about_inner .col-lg-5, .about .about_inner .col-md-7 {
@@ -505,13 +505,13 @@ a {
   text-align: justify !important;
 }
 
-/** Gallery **/
-.gallery {
+/** Image Gallery **/
+.image_gallery {
   margin-top: 5rem;
   padding-top: 5rem;
   background-color: rgb(248, 248, 248);
 }
-.gallery .card {
+.image_gallery .card {
   border: 0;
   padding: 0 30px;
   margin-bottom: 60px;
@@ -519,19 +519,19 @@ a {
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -5px rgba(0, 0, 0, 0);
 }
-.gallery .card .card-img {
+.image_gallery .card .card-img {
   width: calc(100% + 60px);
   margin-left: -30px;
   overflow: hidden;
   z-index: 1;
   border-radius: 0;
 }
-.gallery .card .card-img img {
+.image_gallery .card .card-img img {
   max-width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.gallery .card .card-body {
+.image_gallery .card .card-body {
   z-index: 2;
   background: #7a9eaf;
   border-top: 4px solid #fff;
@@ -542,7 +542,7 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body .card-title {
+.image_gallery .card .card-body .card-title {
   font-family: "Playfair Display", sans-serif;
   text-align: center;
   margin-bottom: 20px;
@@ -554,12 +554,12 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body .card-title h4 {
+.image_gallery .card .card-body .card-title h4 {
   color: #7a9eaf;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body p {
+.image_gallery .card .card-body p {
   font-family: "Times New Roman", sans-serif;
   text-align: justify;
   font-weight: 300;
@@ -567,7 +567,7 @@ a {
   line-height: 26px;
   color: #fff;
 }
-.gallery .card .card-body1 {
+.image_gallery .card .card-body1 {
   z-index: 2;
   background: #6d8e9d;
   border-top: 4px solid #fff;
@@ -578,7 +578,7 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body1 .card-title {
+.image_gallery .card .card-body1 .card-title {
   font-family: "Playfair Display", sans-serif;
   text-align: center;
   margin-bottom: 20px;
@@ -590,12 +590,12 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body1 .card-title h4 {
+.image_gallery .card .card-body1 .card-title h4 {
   color: #7a9eaf;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body1 p {
+.image_gallery .card .card-body1 p {
   font-family: "Times New Roman", sans-serif;
   text-align: justify;
   font-weight: 300;
@@ -603,7 +603,7 @@ a {
   line-height: 26px;
   color: #fff;
 }
-.gallery .card .card-body2 {
+.image_gallery .card .card-body2 {
   z-index: 2;
   background: #617e8c !important;
   border-top: 4px solid #fff;
@@ -614,7 +614,7 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body2 .card-title {
+.image_gallery .card .card-body2 .card-title {
   font-family: "Playfair Display", sans-serif;
   text-align: center;
   margin-bottom: 20px;
@@ -626,12 +626,12 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body2 .card-title h4 {
+.image_gallery .card .card-body2 .card-title h4 {
   color: #7a9eaf;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.gallery .card .card-body2 p {
+.image_gallery .card .card-body2 p {
   font-family: "Times New Roman", sans-serif;
   text-align: justify;
   font-weight: 300;
@@ -639,25 +639,26 @@ a {
   line-height: 26px;
   color: #fff;
 }
-.gallery .card:hover img {
+.image_gallery .card:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.gallery .card:hover .card-body {
+.image_gallery .card:hover .card-body {
   border-color: #7a9eaf;
 }
-.gallery .card:hover .card-body1 {
+.image_gallery .card:hover .card-body1 {
   border-color: #6d8e9d;
 }
-.gallery .card:hover .card-body2 {
+.image_gallery .card:hover .card-body2 {
   border-color: #617e8c;
 }
 
 /** Counter **/
 .stats .stats_heading {
   padding-top: 5rem;
+  margin-bottom: -5rem;
   font-family: "Playfair Display", sans-serif;
-  color: #000;
+  color: #fff;
   text-align: center;
 }
 .stats .counter-up {
@@ -723,35 +724,34 @@ a {
 }
 
 /** Org. Gaols **/
-.gaols {
-  margin-top: 5rem;
-  padding: 5rem 0;
+.goals {
+  padding: 7rem 0;
   background-color: rgb(248, 248, 248);
 }
-.gaols .middle {
+.goals .middle {
   background-color: #a0d6d3;
 }
-.gaols .middle .middle-text {
+.goals .middle .middle-text {
   padding: 0 1rem;
-  color: #000;
+  color: #3d4f57;
 }
-.gaols .middle .middle-text h1 {
+.goals .middle .middle-text h1 {
   padding-top: 2rem;
   font-family: "Playfair Display", sans-serif;
 }
-.gaols .middle .middle-text p {
+.goals .middle .middle-text p {
   font-family: "Times New Roman", sans-serif;
   font-size: 17px;
   text-align: justify !important;
 }
-.gaols .left .left-text {
-  color: #000 !important;
+.goals .left .left-text {
+  color: #3d4f57 !important;
 }
-.gaols .left .left-text h1 {
+.goals .left .left-text h1 {
   padding-top: 2rem;
   font-family: "Playfair Display", sans-serif;
 }
-.gaols .left .left-text h5 {
+.goals .left .left-text h5 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 800;
@@ -760,15 +760,16 @@ a {
   letter-spacing: 1.2px;
   margin-bottom: 20px;
 }
-.gaols .left .left-text ul {
+.goals .left .left-text ul {
   font-family: "Times New Roman", sans-serif;
   font-size: 17px;
+  color: #3d4f57;
   text-align: justify !important;
 }
 
 /** Strategic Framework **/
 .framework {
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   background-color: rgb(248, 248, 248);
 }
 .framework .frame1 {
@@ -788,11 +789,12 @@ a {
 }
 .framework .frame1 .frame1_heading h1 {
   font-family: "Playfair Display", sans-serif;
-  color: #000;
+  color: #7a9eaf;
 }
 .framework .frame1 .frame1_heading p {
   font-family: "Times New Roman", sans-serif;
   font-size: 17px;
+  color: #fff !important;
   text-align: justify !important;
 }
 .framework .frame2 {
@@ -805,7 +807,7 @@ a {
 }
 .framework .frame2 .frame2_heading ul {
   font-family: "Times New Roman", sans-serif;
-  color: #000;
+  color: #3d4f57 !important;
   font-size: 17px;
   text-align: justify !important;
 }
@@ -822,7 +824,7 @@ a {
 }
 .framework .frame2 .frame2_prog ul {
   font-family: "Times New Roman", sans-serif;
-  color: #000;
+  color: #3d4f57;
   font-size: 17px;
   text-align: justify !important;
 }
@@ -832,7 +834,7 @@ a {
 
 /** Projects **/
 .projects {
-  padding: 0 0 5rem 0 !important;
+  padding: 7rem 0 !important;
   background: rgb(248, 248, 248);
 }
 .projects .hr_line {
@@ -856,7 +858,7 @@ a {
   padding-top: 2rem;
 }
 .projects .projects_inner p {
-  color: #000;
+  color: #3d4f57;
   font-size: 17px;
   font-family: "Times New Roman", sans-serif;
   text-align: justify !important;
@@ -953,18 +955,23 @@ a {
 }
 
 /** Slide Show **/
-/** Board of Directors **/
-.board {
+/** Gallery **/
+.gallery {
   background: #465761;
-  padding: 5rem 0;
+  padding: 7rem 0;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
   -ms-flex-line-pack: center !important;
       align-content: center !important;
 }
-
-.profiles {
+.gallery .gallery_heading {
+  font-family: "Playfair Display", sans-serif;
+  color: #fff;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.gallery .profiles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -972,13 +979,11 @@ a {
       justify-content: space-around;
   margin: 20px 80px;
 }
-
-.profile {
+.gallery .profiles .profile {
   -ms-flex-preferred-size: 260px;
       flex-basis: 260px;
 }
-
-.profile .profile-img {
+.gallery .profiles .profile .profile-img {
   height: 260px;
   width: 260px;
   border-radius: 50%;
@@ -988,25 +993,21 @@ a {
   -webkit-transition: 400ms;
   transition: 400ms;
 }
-
-.profile:hover .profile-img {
+.gallery .profiles .profile:hover .profile-img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
-
-.user-name {
+.gallery .profiles .profile .user-name {
   margin-top: 30px;
   font-size: 35px;
 }
-
-.profile h5 {
+.gallery .profiles .profile h5 {
   font-size: 18px;
   font-weight: 100;
   letter-spacing: 3px;
   color: #ccc;
 }
-
-.profile p {
+.gallery .profiles .profile p {
   font-size: 16px;
   margin-top: 20px;
   text-align: justify;
@@ -1053,6 +1054,7 @@ a {
     margin: 20px 10px 80px 10px;
   }
 }
+/** Owl Carousel **/
 /** FAQ **/
 .accordion {
   margin-top: 5rem;
@@ -1106,12 +1108,52 @@ footer p {
   font-family: "Times New Roman", sans-serif;
   font-size: 18px;
 }
+footer .info_item {
+  position: relative;
+  padding-left: 35px;
+}
+footer .info_item i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 25px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 600;
+}
+footer .info_item .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 600;
+}
+footer .info_item h6 {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  font-family: "Gelasio", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+footer .info_item h6 a {
+  color: #000;
+}
+footer .info_item p {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 2px 0px;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
 footer .footer-top {
-  background: url("/assets/img/footer.jpg");
+  background: url("/assets/img/reading.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: 50px 0;
+  padding: 50px 0 10px 0;
 }
 footer .footer-top .navbar-brand {
   font-size: 20px;
@@ -1151,13 +1193,13 @@ footer .footer-bottom .credit p {
   font-size: 16px;
   line-height: 24px;
   font-family: "Gelasio", sans-serif;
-  color: rgb(66, 71, 76);
+  color: #fff !important;
   margin: 10px 0;
   text-align: justify !important;
   text-align: center !important;
 }
 footer .footer-bottom .credit p a {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 500;
   letter-spacing: 1px;
   color: #a0d6d3 !important;
@@ -1198,7 +1240,7 @@ footer .footer-bottom .credit p + p {
 /** Header **/
 .main-header {
   position: fixed;
-  top: 5px;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
@@ -1246,7 +1288,7 @@ footer .footer-bottom .credit p + p {
   color: #7a9eaf !important;
 }
 .main-header .main-menu ul li a:active {
-  color: #7a9eaf;
+  color: #7a9eaf !important;
 }
 .main-header .main-menu ul li a::after {
   content: "";
@@ -1277,7 +1319,7 @@ footer .footer-bottom .credit p + p {
 /** Hamburger Menu **/
 .hamburger {
   position: fixed;
-  top: 40px;
+  top: 35px;
   right: 20px;
   z-index: 10;
   cursor: pointer;
