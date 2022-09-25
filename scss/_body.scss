@@ -438,8 +438,8 @@ a {
   }
 }
 
-/** Projects **/
-.projects {
+/* Programmes Cards */
+.mission {
   padding: 7rem 0 !important;
   background: $bg-color2;
 
@@ -449,7 +449,7 @@ a {
     font-size: 2px;
   }
 
-  .projects_heading {
+  .programmes_heading {
     h1 {
       font-family: $playfair;
       color: $bg-color;
@@ -464,7 +464,7 @@ a {
     }
   }
 
-  .projects_inner {
+  .programmes_inner {
     padding-top: 2rem;
 
     p {
@@ -475,107 +475,61 @@ a {
     }
   }
 
-  .box {
-    padding: 50px 30px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    transition: all ease-in-out 0.3s;
+  .card {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 0;
     background: $white;
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
 
-    span {
-      display: block;
-      font-family: $cormorant;
-      font-size: 28px;
-      font-weight: 700;
-      color: $bg-color;
-    }
+  .card-body {
+    padding-top: 20px;
+    position: relative;
+  }
 
-    h4 {
-      font-family: $cormorant;
-      font-size: 24px;
-      font-weight: 600;
-      padding: 0;
-      margin: 20px 0;
-      color: $bg-color;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-family: $times;
-      color: $bg-color;
-      font-size: 16px;
-      margin: 0;
-      padding: 0;
-      text-align: justify;
-    }
+  .card-title {
+    font-weight: 700;
+    position: relative; 
+    font-family: $playfair;
+    z-index: 2;
+    color: $bg-color;
+    transition: 0.3s;
 
     &:hover {
-      background: $bg-color;
-      padding: 30px 30px 70px 30px;
-      box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+      color: $gray-scale !important;
     }
   }
 
-  .box-1 {
-    padding: 50px 30px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
-    transition: all ease-in-out 0.3s;
-    background: $bg-color;
+  .card-text {
+    position: relative;
+    font-family: $times;
+    z-index: 2;
+    color: $gray-scale;
+    text-align: justify;
+    font-size: 17px;
+  }
 
-    span {
-      display: block;
-      font-family: $cormorant;
-      font-size: 28px;
-      font-weight: 700;
-      color: $white;
-    }
-
-    h4 {
-      font-family: $cormorant;
-      font-size: 24px;
-      font-weight: 600;
-      padding: 0;
-      margin: 20px 0;
-      color: $white;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-family: $times;
-      color: $white;
-      font-size: 16px;
-      margin: 0;
-      padding: 0;
-    }
-
-    &:hover {
-      background: $white;
-      padding: 30px 30px 70px 30px;
-      box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
-    }
+  .card:hover .card-title a {
+    color: $bg-color;
   }
 }
 
-.projects .box:hover span,
-.projects .box:hover h4,
-.projects .box:hover p {
-  color: $white !important;
+@media (max-width: 1024px) {
+  .features {
+    background-attachment: scroll;
+  }
 }
 
-.projects .box-1:hover span,
-.projects .box-1:hover h4 {
-  color: $bg-color !important;
-}
-
-.projects .box-1:hover p {
-  color: $bg-color !important
-}
 
 /** Slide Show **/
 
 /** Gallery **/
-.gallery {
+.gallery1 {
   background: $sec-color;
-  padding: 7rem 0;
+  padding: 7rem 0 0 0;
   align-items: center !important;
   align-content: center !important;
 
@@ -610,6 +564,7 @@ a {
       .user-name {
         margin-top: 30px;
         font-size: 35px;
+        text-align: center;
       }
 
       h5 {
@@ -617,12 +572,14 @@ a {
         font-weight: 100;
         letter-spacing: 3px;
         color: #ccc;
+        text-align: center;
       }
 
       p {
         font-size: 16px;
         margin-top: 20px;
         text-align: justify;
+        text-align: center;
       }
     }
   }
@@ -667,7 +624,136 @@ a {
 }
 
 /** Owl Carousel **/
+.gallery2 {
+  background: $sec-color;
+  padding: 3rem 0 5rem 0;
+  
+  .g_heading {
+    font-family: $playfair;
+    color: $white;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
+.wrapper{
+  max-width: 1100px;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .image{
+  padding: 7px;
+  width: calc(100% / 3);
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
 
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: $sec-color;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  display: flex;
+  align-items: center;
+  padding: 12px 15px 12px 10px;
+  justify-content: space-between;
+}
+.preview-box .details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  margin: 0 5px;
+}
+.details .title p.current-img{
+  font-weight: 500;
+}
+.details .icon{
+  color: $white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.image-box .slide{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  height: 50px;
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+.slide.prev{
+  left: 0px;
+}
+.slide.next{
+  right: 0px;
+}
+.image-box img{
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.45);
+}
+
+@media(max-width: 1000px){
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+}
+@media(max-width: 600px){
+  .gallery .image{
+    width: 100%;
+    padding: 4px;
+  }
+}
+  
 
 /** FAQ **/
 .accordion {
@@ -703,7 +789,11 @@ a {
   
 /** Footer Page **/
 footer {
-  background: $sec-color !important;
+  background: url('/assets/img/reading2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px 0 0 0;
 
   h6 {
     font-family: $gelasio !important;
@@ -774,11 +864,11 @@ footer {
   }
 
   .footer-top {
-      background: url('/assets/img/reading.jpg');
+      background: url('/assets/img/reading2.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      padding: 50px 0 10px 0;
+      padding: 10px 0 10px 0;
   
       .navbar-brand {
           font-size: 20px;
@@ -826,14 +916,14 @@ footer {
               line-height: 24px;
               font-family: $gelasio;
               color: $white !important;
-              margin: 10px 0;
+              margin: 10px 0 10 0;
               text-align: justify !important;
               text-align: center !important;
               a {
                   font-family: $cormorant;
                   font-weight: 500;
                   letter-spacing: 1px;
-                  color: $lime !important;
+                  color: rgba(255, 255, 255, 0.6) !important;
                   font-size: bolder;
                   &:hover {
                   color: $white !important;
@@ -874,6 +964,3 @@ footer {
   background-color: rgba(255, 255, 255, 0.15);
   color: $prim-color;
 }
-
-
-

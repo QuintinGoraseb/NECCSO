@@ -371,60 +371,146 @@ $hero: url('/assets/img/class_dark.jpg');
 .prog_modal {
     
   .modal-body {
-    border: none;
+    background: $white;
 
-    .info {
-      padding-top: 3rem;
+    .frame1 {
+      background: $sec-color;
+  
+      .frame1_heading {
+        
+        h2 {
+          font-family: $playfair;
+          color: $bg-color;
+          margin: 1rem 0;
+        }
+        p {
+          font-family: $times;
+          font-size: 17px;
+          font-weight: normal;
+          color: $white !important;
+          text-align: justify !important;
+        }
+      }
+    }
+  
+    .frame2 {
+      padding: 2rem;
+      .frame2_heading {
+  
+        p {
+          font-family: $times;
+          color: #3d4f57 !important;
+          font-size: 17px;
+          font-weight: normal;
+          text-align: justify !important;
+        }
 
+        ul {
+          font-family: $times;
+          color: #3d4f57 !important;
+          font-size: 17px;
+          font-weight: normal;
+          text-align: justify !important;
+        }
+      }
+      .frame2_img {
+        margin-top: 2rem;
+        
+        img {
+          border: 5px solid $bg-color;
+        }
+      }
+      .frame2_prog {
+        margin-top: 2rem;
+        
+        p {
+          font-family: $times;
+          color: #3d4f57;
+          font-size: 17px;
+          font-weight: normal;
+          text-align: justify !important;
+        }
+      }
+    }
+  
+    .frame3 {
+      background: $bg-color;
+    }
+  }
+}
+
+/** Policy Modal **/
+.policy_modal {
+
+  .modal-body {
+
+    .inline-area {
+      padding: 1rem;
+      background: $bg-color;
+      border-radius: 10px;
+      color: $prim-color;
+  
+      h1 {
+        font-family: $cormorant;
+        color: $white;
+      }
+  
       h2 {
-        font-family: $playfair;
-        padding-bottom: 2rem;
-        border-bottom: 2px solid #6d8e9d;
+        font-family: $cormorant;
+        color: $white;
       }
-    }
-
-    .info_text {
-      padding-top: 3rem;
-
+  
       p {
-        font-family: $times !important;
-        color: $white !important;
-        font-weight: normal;
-        font-size: 14px;
-        text-align: justify !important;
-      }
+        font-family: $gelasio;
+        font-size: 16px;
+        color: $black;
+        text-align: justify;
 
-      h5 {
-        padding-top: 1rem;
-        font-family: $playfair;
+        strong {
+          letter-spacing: 1px;
+        }
       }
-
+  
       ul {
-        padding-top: 2rem;
-        font-family: $times !important;
-        color: $white !important;
-        font-weight: normal;
-        font-size: 17px !important;
-        text-align: justify !important;
+        font-family: $gelasio;
+        font-size: 16px;
+        color: $black;
+        text-align: justify;
       }
     }
+  }
+}
 
-    .right_img {
+/** Error Modal **/
+.error_modal {
 
-      img {
-        padding-top: 3rem;
+  .modal-body {
+
+    .page-404 {
+      text-align: center;
+  
+      h1 {
+        font-family: $cormorant;
+        font-weight: 700;
+        font-size: 220px;
+        color: $white;
+        line-height: 220px;
       }
-    }
-
-    .info_text2 {
-      padding-top: 2rem;
-
+  
+      h2 {
+        font-family: "Asap";
+        font-weight: 400;
+        padding: 2rem 0;
+        font-size: 70px;
+        color: $white;
+        line-height: 70px;
+      }
+  
       p {
-        font-family: $times !important;
-        color: $white !important;
-        font-weight: normal;
-        font-size: 14px;
-        text-align: justify !important;
+        font-family: $gelasio;
+        text-align: justify;
+        font-size: 16px;
+        color: $black;
       }
     }
   }

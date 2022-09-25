@@ -197,12 +197,44 @@
 }
 
 /** Program btn **/
-.program_btn {
-  font-family: $times;
+.prog_btn {
+  border-radius: 0;
+  background: red;
   color: $bg-color !important;
-  i {
-    color: $bg-color;
-  }
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.prog_btn span {
+  font-family: $grotesk;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: $bg-color;
+}
+
+.prog_btn span:after {
+  content: '\00bb';
+  position: absolute;
+  color: $prim-color;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.prog_btn:hover span {
+  padding-right: 25px;
+}
+
+.prog_btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /** Program Modal close_btn **/
