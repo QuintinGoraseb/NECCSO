@@ -114,8 +114,8 @@ $hero: url('/assets/img/class_dark.jpg');
 }
 @media (max-width: 991px) {
   .about {
-    padding-top: .5rem !important;
-    margin-bottom: -6rem;
+    padding-top: 3rem !important;
+    margin-bottom: -3rem;
   }
   .about .about_inner .about_left_text h6 {
     text-align: center !important;
@@ -129,6 +129,15 @@ $hero: url('/assets/img/class_dark.jpg');
   .about_left_text {
     padding: .5rem !important;
   }
+  .image_gallery .card-body p {
+    display: none !important;
+  }
+  .image_gallery .card-body1 p {
+    display: none !important;
+  }
+  .image_gallery .card-body2 p {
+    display: none !important;
+  }
   .count {
     margin-bottom: -5rem;
   }
@@ -141,8 +150,37 @@ $hero: url('/assets/img/class_dark.jpg');
       margin-bottom: -5rem;
     }
   }
-  .counter-up .content .box .text {
-    margin-bottom: -9rem !important;
+  .goals {
+    margin-top: -4rem !important;
+  }
+  .stats_heading h1 {
+    font-size: 40px !important;
+  }
+  .counter-up .content .box .counter {
+    font-size: 40px !important;
+  }
+  .framework {
+  margin-bottom: -5rem !important;
+  }
+  .mission {
+    padding-top: 0 !important;
+  }
+  .programmes_heading h1 {
+    font-size: 40px !important;
+  }
+  .page-404 h1 {
+    font-size: 170px !important;
+  }
+  .gallery1 {
+    margin-bottom: -4rem !important;
+  }
+  .gallery_heading h1 {
+    font-size: 40px !important;
+    margin-top: -4rem !important;
+  }
+  .g_heading h1 {
+    padding-top: 0 !important;
+    font-size: 50px !important;
   }
 }
 @media (max-width: 1036px) {
