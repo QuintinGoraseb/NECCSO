@@ -24,7 +24,7 @@
 $('#number1').jQuerySimpleCounter({end: 2011,duration: 3000});
 $('#number2').jQuerySimpleCounter({end: 40,duration: 3000});
 $('#number3').jQuerySimpleCounter({end: 6,duration: 2000});
-$('#number4').jQuerySimpleCounter({end: 1,duration: 2500});
+$('#number4').jQuerySimpleCounter({end: 100,duration: 3000});
 
 
 

@@ -832,6 +832,10 @@ ul {
   content: "+";
   padding-left: 0.5rem !important;
 }
+.sectionClass .fullWidth .projectFactsWrap .item .percent-sign::after {
+  content: "%";
+  padding-left: 0.5rem !important;
+}
 .sectionClass .fullWidth .projectFactsWrap .item:hover i, .sectionClass .fullWidth .projectFactsWrap .item p {
   color: white;
 }

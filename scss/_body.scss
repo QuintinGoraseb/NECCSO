@@ -343,6 +343,11 @@ ul {
           padding-left: .5rem !important;
         }
 
+        .percent-sign::after {
+          content: "%";
+          padding-left: .5rem !important;
+        }
+
         &:hover i, p{
           color: white;
         }
