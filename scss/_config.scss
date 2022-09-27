@@ -230,8 +230,8 @@ $hero: url('/assets/img/class_dark.jpg');
 
   /** Tooltip **/
 .tooltip-inner {
-    font-family: $cormorant;
-    color: $prim-color;
+    font-family: $gelasio;
+    color: $black;
     font-size: 15px;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.3);
@@ -264,7 +264,7 @@ $hero: url('/assets/img/class_dark.jpg');
   .cta p {
     color: $white;
     font-size: 20px !important;
-    font-family: $times;
+    font-family: $grotesk;
   }
   
   .cta .cta-btn {
@@ -283,9 +283,9 @@ $hero: url('/assets/img/class_dark.jpg');
   }
   
   .cta .cta-btn:hover {
-    background: $prim-color;
-    border-color: $prim-color;
-    color: $text-color;
+    background: $lime;
+    border-color: $lime;
+    color: $white !important;
   }
   
 /** Policies **/
@@ -381,15 +381,15 @@ $hero: url('/assets/img/class_dark.jpg');
       background-color: $bg-color;
   
       h1 {
-        font-family: $playfair;
-        color: $black;
+        font-family: $gelasio;
+        color: $white;
       }
 
       p {
         font-size: 18px;
         font-weight: 800;
         color: #3d4f57;
-        font-family: $cormorant;
+        font-family: $gelasio !important;
         letter-spacing: 1.2px;
       }
   
@@ -417,12 +417,12 @@ $hero: url('/assets/img/class_dark.jpg');
       .frame1_heading {
         
         h2 {
-          font-family: $playfair;
+          font-family: $gelasio;
           color: $bg-color;
           margin: 1rem 0;
         }
         p {
-          font-family: $times;
+          font-family: $grotesk !important;
           font-size: 17px;
           font-weight: normal;
           color: $white !important;
@@ -436,7 +436,7 @@ $hero: url('/assets/img/class_dark.jpg');
       .frame2_heading {
   
         p {
-          font-family: $times;
+          font-family: $grotesk !important;
           color: #3d4f57 !important;
           font-size: 17px;
           font-weight: normal;
@@ -444,7 +444,7 @@ $hero: url('/assets/img/class_dark.jpg');
         }
 
         ul {
-          font-family: $times;
+          font-family: $grotesk !important;
           color: #3d4f57 !important;
           font-size: 17px;
           font-weight: normal;
@@ -472,7 +472,7 @@ $hero: url('/assets/img/class_dark.jpg');
     }
   
     .frame3 {
-      background: $bg-color;
+      background: #AF7A9E;
     }
   }
 }
