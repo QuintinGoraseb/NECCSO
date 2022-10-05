@@ -247,7 +247,7 @@ $hero: url('/assets/img/class_dark.jpg');
 
   /** CTA **/
 .cta {
-    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/neccso-pics/cta-pic-bw.jpg") fixed center center;
+    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/img/images/cta-pic-bw.jpg") fixed center center;
     background-size: cover;
     padding: 60px 0;
   }
@@ -425,7 +425,7 @@ $hero: url('/assets/img/class_dark.jpg');
           font-family: $grotesk !important;
           font-size: 17px;
           font-weight: normal;
-          color: $white !important;
+          color: #f5f5f5 !important;
           text-align: justify !important;
         }
       }
@@ -467,6 +467,13 @@ $hero: url('/assets/img/class_dark.jpg');
           font-size: 17px;
           font-weight: normal;
           text-align: justify !important;
+        }
+      }
+      .frame2_empty {
+        background: $bg-color !important;
+        p {
+          padding-top: 1rem;
+          color: #f5f5f5;
         }
       }
     }
@@ -549,6 +556,65 @@ $hero: url('/assets/img/class_dark.jpg');
         text-align: justify;
         font-size: 16px;
         color: $black;
+      }
+    }
+  }
+}
+
+/**  Contact-Info **/
+.gallery3 {
+  background: $bg-color;
+  padding: 4rem 0 0 0;
+  align-items: center !important;
+  align-content: center !important;
+
+  .gallery_heading {
+    font-family: $gelasio;
+    color: $white;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .profiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+
+    .profile {
+      flex-basis: 260px;
+
+      .profile-img {
+        height: 260px;
+        width: 260px;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: 400ms;
+      }
+
+      &:hover .profile-img {
+        filter: grayscale(0);
+      }
+
+      .user-name {
+        margin-top: 30px;
+        font-family: $gelasio;
+        font-size: 35px;
+        text-align: center;
+      }
+
+      h5 {
+        font-size: 20px !important;
+        font-weight: 100;
+        letter-spacing: 3px;
+        color: #ccc;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 20px !important;
+        text-align: center !important;
       }
     }
   }

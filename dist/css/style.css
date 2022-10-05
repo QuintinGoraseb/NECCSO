@@ -243,8 +243,8 @@
 
 /** CTA **/
 .cta {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 2, 2, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/img/neccso-pics/cta-pic-bw.jpg") fixed center center;
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/neccso-pics/cta-pic-bw.jpg") fixed center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 2, 2, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/assets/img/images/cta-pic-bw.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/img/images/cta-pic-bw.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -401,7 +401,7 @@
   font-family: "Familjen Grotesk", sans-serif !important;
   font-size: 17px;
   font-weight: normal;
-  color: #fff !important;
+  color: #f5f5f5 !important;
   text-align: justify !important;
 }
 .prog_modal .modal-body .frame2 {
@@ -436,6 +436,13 @@
   font-size: 17px;
   font-weight: normal;
   text-align: justify !important;
+}
+.prog_modal .modal-body .frame2 .frame2_empty {
+  background: #7a9eaf !important;
+}
+.prog_modal .modal-body .frame2 .frame2_empty p {
+  padding-top: 1rem;
+  color: #f5f5f5;
 }
 .prog_modal .modal-body .frame3 {
   background: #AF7A9E;
@@ -496,6 +503,67 @@
   text-align: justify;
   font-size: 16px;
   color: #000;
+}
+
+/**  Contact-Info **/
+.gallery3 {
+  background: #7a9eaf;
+  padding: 4rem 0 0 0;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
+}
+.gallery3 .gallery_heading {
+  font-family: "Gelasio", sans-serif;
+  color: #fff;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.gallery3 .profiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px 80px;
+}
+.gallery3 .profiles .profile {
+  -ms-flex-preferred-size: 260px;
+      flex-basis: 260px;
+}
+.gallery3 .profiles .profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: pointer;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+.gallery3 .profiles .profile:hover .profile-img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+.gallery3 .profiles .profile .user-name {
+  margin-top: 30px;
+  font-family: "Gelasio", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+.gallery3 .profiles .profile h5 {
+  font-size: 20px !important;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+  text-align: center;
+}
+.gallery3 .profiles .profile p {
+  margin-top: 20px;
+  font-size: 20px !important;
+  text-align: center !important;
 }
 
 /** Global Styles **/
@@ -916,7 +984,7 @@ ul {
   color: #465761;
 }
 .framework .frame1 .frame1_heading p {
-  color: #fff !important;
+  color: #f5f5f5 !important;
   font-family: "Familjen Grotesk", sans-serif;
 }
 .framework .frame2 {
@@ -932,6 +1000,9 @@ ul {
 }
 .framework .frame2 .frame2_img {
   margin-top: 2rem;
+}
+.framework .frame2 .frame2_img img {
+  border: 5px solid #7a9eaf;
 }
 .framework .frame2 .frame2_prog {
   margin-top: 2rem;
@@ -1001,7 +1072,7 @@ ul {
   transition: 0.3s;
 }
 .mission .card-title:hover {
-  color: #858585 !important;
+  color: #617e8c !important;
 }
 .mission .card-text {
   position: relative;
@@ -1064,6 +1135,7 @@ ul {
 }
 .gallery1 .profiles .profile .user-name {
   margin-top: 30px;
+  font-family: "Gelasio", sans-serif;
   font-size: 35px;
   text-align: center;
 }
@@ -1317,7 +1389,7 @@ ul {
 
 /** Footer Page **/
 footer {
-  background: url("/assets/img/reading2.jpg");
+  background: #212529;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1383,7 +1455,7 @@ footer .info_item p {
   color: rgba(255, 255, 255, 0.6) !important;
 }
 footer .footer-top {
-  background: url("/assets/img/reading2.jpg");
+  background: #212529;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1456,7 +1528,7 @@ footer .footer-bottom .credit p + p {
   position: fixed;
   bottom: 50px;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(99, 100, 101, 0.8);
   color: #020202 !important;
   text-align: center;
   font-size: 30px;
@@ -1782,14 +1854,14 @@ footer .footer-bottom .credit p + p {
 }
 
 .cta .cta-info h3 {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Gelasio", sans-serif !important;
 }
 .cta .cta-info p {
   font-size: 18px;
 }
 
 .cta-btn span {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Gelasio", sans-serif !important;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -1865,11 +1937,11 @@ footer .footer-bottom .credit p + p {
 /** Submit_btn **/
 .submit_btn {
   display: inline-block;
-  background: transparent;
-  color: #fff;
-  font-family: "Playfair Display", sans-serif;
+  background: #fff;
+  color: #465761;
+  font-family: "Gelasio", sans-serif;
   width: 148px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   border: 1px solid #fff;
   line-height: 48px;
@@ -1881,8 +1953,9 @@ footer .footer-bottom .credit p + p {
   cursor: pointer;
 }
 .submit_btn:hover {
-  background: #fff;
-  color: #7a9eaf;
+  background: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  color: #465761;
 }
 
 /** close_btn **/
@@ -1890,9 +1963,9 @@ footer .footer-bottom .credit p + p {
   display: inline-block;
   background: rgb(66, 71, 76);
   color: #fff;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Gelasio", sans-serif;
   width: 148px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   border: 1px solid rgb(66, 71, 76);
   line-height: 48px;
@@ -1904,7 +1977,7 @@ footer .footer-bottom .credit p + p {
   cursor: pointer;
 }
 .close_btn:hover {
-  background: transparent;
+  background: red;
   color: rgb(66, 71, 76);
 }
 
@@ -1957,7 +2030,7 @@ footer .footer-bottom .credit p + p {
   display: inline-block;
   background: #465761;
   color: #fff;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Gelasio", sans-serif;
   width: 148px;
   font-size: 16px;
   font-weight: 500;
@@ -1972,8 +2045,8 @@ footer .footer-bottom .credit p + p {
   letter-spacing: 1px;
 }
 .M_close_btn:hover {
-  background: #7a9eaf;
-  border: 1px solid #fff;
+  background: #36434a;
+  border: 1px solid #36434a !important;
   color: #fff;
 }
 

@@ -430,7 +430,7 @@ ul {
         color: $sec-color;
       }
       p {
-        color: $white !important;
+        color: #f5f5f5 !important;
         font-family: $grotesk;
       }
     }
@@ -450,6 +450,10 @@ ul {
     }
     .frame2_img {
       margin-top: 2rem;
+
+      img {
+        border: 5px solid $bg-color;
+      }
     }
     .frame2_prog {
       margin-top: 2rem;
@@ -528,7 +532,7 @@ ul {
     transition: 0.3s;
 
     &:hover {
-      color: $gray-scale !important;
+      color: #617e8c !important;
     }
   }
 
@@ -589,6 +593,7 @@ ul {
 
       .user-name {
         margin-top: 30px;
+        font-family: $gelasio;
         font-size: 35px;
         text-align: center;
       }
@@ -813,7 +818,8 @@ ul {
   
 /** Footer Page **/
 footer {
-  background: url('/assets/img/reading2.jpg');
+  //background: url('/assets/img/reading2.jpg');
+  background: #212529;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -885,7 +891,8 @@ footer {
   }
 
   .footer-top {
-      background: url('/assets/img/reading2.jpg');
+      //background: url('/assets/img/reading2.jpg');
+      background: #212529;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -971,7 +978,7 @@ footer {
   position: fixed;
   bottom: 50px;
   right: 0;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(99, 100, 101, .8);
   color: #020202 !important;
   text-align: center;
   font-size: 30px;
