@@ -11,11 +11,13 @@
     text-transform: uppercase;
     height: 100px;
     padding: 0 30px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
 
     /* Logo */
-    .logo {
-        width: 210px;
+    .logo, .logoB {
+        width: 180px;
         height: auto;
 
         img {
@@ -35,17 +37,19 @@
 
             li {
                 position: relative;
-                font-size: 0.9rem;
+                top: .6rem;
+                font-family: $gelasio;
+                font-size: 1rem;
                 margin-right: 20px;
                 padding-bottom: 2px;
                 cursor: pointer;
 
                 a:hover {
-                    color: #6C98B2 !important;
+                    color: #fff !important;
                 }
-                a:active {
-                    color: #6C98B2 !important;
-                }
+                /*a:active {
+                    color: #5d879b !important;
+                }*/
 
                 a::after {
                     content: '';
@@ -56,14 +60,14 @@
                     height: 1px;
                     background: $white;
                     transform: scaleX(0);
-                    transition: transform 0.6s cubic-bezier(0.19,1,0.22,1);
+                    transition: transform 1s cubic-bezier(0.19,1,0.22,1);
                     transform-origin: right center;
                 }
 
                 a:hover::after {
                     transform: scaleX(1);
                     transform-origin: left center;
-                    transition-duration: 0.4s;
+                    transition-duration: 1s;
                 }
             }
         }
@@ -73,7 +77,7 @@
 /** Hamburger Menu **/
 .hamburger {
     position: fixed;
-    top: 35px;
+    top: 2.7rem;
     right: 20px;
     z-index: 10;
     cursor: pointer;
@@ -101,7 +105,7 @@
       .hamburger-bottom {
         transform: translateY(10px);
     }
-}
+}   
   
 /** Transition hamburger to X when open **/
 .open {

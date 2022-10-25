@@ -31,16 +31,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/icofont/icofont.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!--<link rel="stylesheet" href="assets/css/aos.css">-->
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/icomoon.css">
     <link rel="stylesheet" href="assets/vendors/linericon/style.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
 
     <!-- CSS Section -->
     <link rel="stylesheet" href="dist/css/style.css">
@@ -65,7 +66,7 @@
     <header class="main-header">
         <div class="logo">
             <a href="index.html">
-                <img src="assets/img/logo/logo.png" alt="spaceX-logo">
+                <img src="assets/img/logo/logo.png" id="logo" alt="spaceX-logo">
             </a>
         </div>
         <nav class="main-menu">
@@ -166,38 +167,59 @@
         </div>
     </section>
     <!--================ End Image Gallery Area ==========-->
-    <!--================ Start Counter Area ==============-->
-    <section id="projectFacts" class="sectionClass">
-    <div class="fullWidth eight columns">
-        <div class="projectFactsWrap ">
-            <div class="item wow animated animated" data-number="2011" style="visibility: visible;">
-                <i class="fa-solid fa-hands-holding"></i>
-                <p id="number1" class="number">2011</p>
-                <span></span>
-                <p>Established</p>
+    <!--================ Start Counts Area ==============-->
+    <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row no-gutters">
+                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+                <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+                    <div class="content d-flex flex-column justify-content-center">
+                        <h2>A Bit About Us</h2>
+                        <p class="sec_heading">
+                            The Namibian Education Coalition for Civil Society Organisations (NECCSO) is a network of civil society stakeholders in education or which have a keen interest in educational matters in terms of policy development, policy implementation, policy monitoring and service delivery. NECCSO asserts that the contribution of a broad-based and coordinated civil society is instrumental for achieving relevant inclusive quality education for all.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="icofont-sun"></i>
+                                    <span class="num" data-toggle="counter-up">2011</span>
+                                    <p><strong><span>Established:<br></span></strong> NECCSO was officially launched on 6 September 2011 at it's Inaugural General Assembly in Windhoek.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="icofont-users-social"></i>
+                                    <span class="num" data-toggle="counter-up">40</span>
+                                    <p><strong><span>Coalitions:<br></span></strong> NECCSO has around 40 founding civil society organisations.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="icofont-document-folder"></i>
+                                    <span class="num" data-toggle="counter-up">6</span>
+                                    <p><strong><span>Programs/Projects:<br></span></strong> NECCSO has thus far successfully engaged in and completed up to six programs and projects since it's inception in 2011.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="icofont-education"></i>
+                                    <span class="num" data-toggle="counter-up">1</span>
+                                    <p><strong><span>Education:<br></span></strong> NECCSO main and only focus is on the education sector in Namibia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .content-->
+                </div>
             </div>
-            <div class="item wow animated animated" data-number="40" style="visibility: visible;">
-                <i class="fa-solid fa-people-group"></i>
-                <p id="number2" class="number plus-sign">40</p>
-                <span></span>
-                <p>Coalitions</p>
-            </div>
-            <div class="item wow animated animated" data-number="6" style="visibility: visible;">
-                <i class="fa-sharp fa-solid fa-network-wired"></i>
-                <p id="number3" class="number">6</p>
-                <span></span>
-                <p>Programmes</p>
-            </div>
-            <div class="item wow animated animated" data-number="100" style="visibility: visible;">
-                <i class="fa-solid fa-earth-africa"></i>
-                <p id="number4" class="number percent-sign">100</p>
-                <span></span>
-                <p>Namibian</p>
-            </div>
+
         </div>
-    </div>
-</section>
-    <!--================ End Counter Area ================-->
+    </section>
+    <!--================ End Counts Area ================-->
     <!--================ End Background Area =============-->
     <!--================ Start Goals Area ================-->
     <section class="goals" id="goals">
@@ -237,7 +259,7 @@
     <!--================ End Goals Area ==================-->
     <!--================ Start CTA Area ==================-->
     <section id="cta" class="cta">
-        <div class="container" data-aos="zoom-in">
+        <div class="container" data-aos="zoom-in"> 
 
             <div class="cta-info text-center">
                 <h3>Need more information?</h3>
@@ -288,12 +310,12 @@
         </div>
     </section>
     <!--================ End Framework Area ==============-->
-    <!--================ Start Programmes Area =============-->
+    <!--================ Start Programmes Area ===========-->
     <section class="mission" id="mission">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="programmes_heading">
+                    <div class="programmes_heading" data-aos="zoom-in">
                         <h1>Programmes & Projects</h1>
                         <h5>2011 - 2014</h5>
                     </div>
@@ -363,8 +385,8 @@
             </div>
         </div>
     </section>
-    <!--================ End programmes Area ===============-->
-    <!--================ Start Gallery Area ===============-->
+    <!--================ End programmes Area =============-->
+    <!--================ Start Gallery Area ==============-->
     <section class="gallery1" id="gallery1">
         <div class="container">
             <div class="row">
@@ -375,19 +397,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="profiles">
-                        <div class="profile">
+                        <div class="profile" data-aos="fade-up">
                             <img src="assets/img/images/chairman.jpg" class="profile-img">
                             <h3 class="user-name">Mr. Simeon Michael Jimmy (Chairman)</h3>
                             <h5>Namibia Literacy Trust (NLT)</h5>
                             <p>smjimmyall@gmail.com</p>
                         </div>
-                        <div class="profile">
+                        <div class="profile" data-aos="fade-up" data-aos-delay="150">
                             <img src="assets/img/images/shenidima.jpg" class="profile-img">
                             <h3 class="user-name">Mr. Salatiel Shinedima</h3>
                             <h5>Women’s Action for Development (WAD)</h5>
                             <p>salatiel@wad.org.na</p>
                         </div>
-                        <div class="profile">
+                        <div class="profile" data-aos="fade-up" data-aos-delay="300">
                             <img src="assets/img/images/rosa1.jpg" class="profile-img">
                             <h3 class="user-name">Ms. Rosa Namises</h3>
                             <h5>Women Solidarity Namibia (WSN)</h5>
@@ -399,19 +421,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="profiles">
-                        <div class="profile">
+                        <div class="profile" data-aos="fade-up" data-aos-delay="450">
                             <img src="assets/img/images/prada.jpg" class="profile-img">
                             <h3 class="user-name">Mr. Nelson Prada</h3>
                             <h5>Katutura Youth Empowerment Centre</h5>
                             <p>nprada@kayec.org</p>
                         </div>
-                        <div class="profile">
+                        <div class="profile" data-aos="fade-up" data-aos-delay="600">
                             <img src="assets/img/images/avatar.jpg" class="profile-img">
                             <h3 class="user-name">Vacant Seat</h3>
                             <h5></h5>
                             <p></p>
                         </div>
-                        <div class="profile">
+                        <div class="profile" data-aos="fade-up" data-aos-delay="750">
                             <img src="assets/img/images/avatar.jpg" class="profile-img">
                             <h3 class="user-name">Vacant Seat</h3>
                             <h5></h5>
@@ -423,7 +445,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="profiles">
-                        <div class="profile">
+                        <div class="profile" data-aos="fade-up" data-aos-delay="750">
                             <img src="assets/img/images/martin.jpg" class="profile-img">
                             <h3 class="user-name">Mr. Martin Matsuib</h3>
                             <h5>National Coordinator</h5>
@@ -470,7 +492,7 @@
             </div>
         </div>
     </section>
-    <!--================ End Gallery Area =================-->
+    <!--================ End Gallery Area ================-->
     <!--================ Start Footer Area ===============-->
     <footer>
         <div class="footer-top bg-dark">
@@ -1253,53 +1275,22 @@ Dispute Resolution. Please read this Arbitration Agreement carefully. It is part
     <!--================ End Policy Modal Area ===========-->
     
     <!--================ Start Back2Top Area =============-->
-    <a id="back2Top" data-toggle="tooltip" data-placement="left" title="Back to Top" href="#home">&#10148;</a>
+    <a id="back2Top" title="Back to Top" href="#home">&#10148;</a>
     <!--================ End Back2Top Area ===============-->
     <!--================ Start JavaScript Area ===========-->
     <script src='assets/js/jquery.min.js'></script>
     <script src='assets/js/bootstrap.bundle.min.js'></script>
     <script src='assets/js/owl.carousel.min.js'></script>
     <script src='assets/js/jquery.magnific-popup.min.js'></script>
-    <script src='assets/js/aos.js'></script>
     <script src='assets/js/script1.js'></script>
     <script src='assets/js/script.js'></script>
-    <script src='assets/js/main.js'></script>
     <script src='/assets/js/scroll.js'></script>
     <script src='/assets/js/counter.js'></script>
     <script src='/assets/js/slider.js'></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-  	        var scroll = $(window).scrollTop();
-                if (scroll > 150) {
-                    $(".main-header").css("background" , "rgba(0, 0, 0, 0.70)");
-                }
-                else{
-                    $(".main-header").css("background" , "transparent");  	
-                }
-            })
-        })
-    </script>
-    <!--<script>
-        $(document).ready(function(){       
-            var scroll_pos = 0;
-            $(document).scroll(function() { 
-                scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 210) {
-                    $("nav").css('background-color', 'blue');
-                    $("nav a").css('color', 'black');
-                } else {
-                    $("nav").css('background-color', 'red');
-                    $("nav a").css('color', 'white');
-                }
-            });
-        });
-    </script>-->
+    <script src='/assets/js/navbar.js'></script>
+    <script src='assets/vendors/counterup/counterup.min.js'></script>
+    <script src='assets/vendors/aos/aos.js'></script>
+    <script src='assets/js/main.js'></script>
     <!--================ End JavaScript Area =============-->
     
 </body>

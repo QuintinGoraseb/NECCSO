@@ -1,36 +1,18 @@
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 2
-      },
-      768: {
-        items: 4
-      },
-      900: {
-        items: 6
-      }
-    }
-  });
+/**
+* Template Name: Gp - v2.2.1
+* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
-  // Events carousel (uses the Owl Carousel library)
-  $(".events-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+!(function($) {
+  "use strict";
 
-   // Initiate venobox lightbox
-   $(document).ready(function() {
-    $('.venobox').venobox();
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
   });
-
-  	// Scrollax
-    $.Scrollax();
 
   // Init AOS
   function aos_init() {
@@ -42,3 +24,5 @@
   $(window).on('load', function() {
     aos_init();
   });
+
+})(jQuery);

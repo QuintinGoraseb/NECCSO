@@ -135,7 +135,7 @@
   .image_gallery .card-body2 p {
     display: none !important;
   }
-  .count {
+  .counts {
     margin-bottom: -5rem;
   }
   .stats_heading h1 {
@@ -156,6 +156,9 @@
   }
   .framework {
     margin-bottom: -5rem !important;
+  }
+  .frame1_heading {
+    padding-top: 1rem !important;
   }
   .mission {
     padding-top: 0 !important;
@@ -582,7 +585,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: #fff !important;
+  color: #fff;
 }
 
 p {
@@ -598,12 +601,12 @@ ul {
 }
 
 .line {
-  color: #6C98B2;
+  color: #5d879b;
   font-weight: bold;
 }
 
 .edu {
-  color: #6C98B2;
+  color: #5d879b;
 }
 
 .has-dropcap:first-letter {
@@ -825,101 +828,92 @@ ul {
   border-color: #617e8c;
 }
 
-/** Counter **/
-.sectionClass {
-  padding: 20px 0px 50px 0px;
-  position: relative;
-  display: block;
+/** Counts **/
+.counts {
+  padding: 5rem 0 !important;
+  background: #7a9eaf !important;
 }
-.sectionClass .fullWidth {
-  width: 100% !important;
-  display: table;
-  float: none;
-  padding: 0;
-  min-height: 1px;
-  height: 100%;
-  position: relative;
+.counts .content {
+  padding: 30px 0 0 30px;
 }
-.sectionClass .fullWidth .projectFactsWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 30px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.counts .content h2 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #fff !important;
+  font-family: "Gelasio", sans-serif;
+  text-transform: capitalize;
 }
-.sectionClass .fullWidth .projectFactsWrap .item {
-  width: 25%;
-  height: 100%;
-  padding: 50px 0px;
-  text-align: center;
-}
-.sectionClass .fullWidth .projectFactsWrap .item p.number {
-  font-size: 40px !important;
-  padding: 1rem 0 0 0;
-  font-weight: bold;
-  font-family: "Playfair Display", sans-serif !important;
-}
-.sectionClass .fullWidth .projectFactsWrap .item p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 18px;
-  margin: 0;
-  padding: 10px;
+.counts .content .sec_heading {
+  margin-bottom: 0;
+  font-size: 20px !important;
+  font-weight: 600 !important;
   font-family: "Familjen Grotesk", sans-serif;
-  text-align: center !important;
+  color: #3a5460;
 }
-.sectionClass .fullWidth .projectFactsWrap .item:nth-child(1) {
-  background: #556E7A;
+.counts .content .count-box {
+  font-family: "Gelasio", sans-serif;
+  padding: 20px 0;
+  width: 100%;
 }
-.sectionClass .fullWidth .projectFactsWrap .item:nth-child(2) {
-  background: #617E8C;
-}
-.sectionClass .fullWidth .projectFactsWrap .item:nth-child(3) {
-  background: #6D8E9D;
-}
-.sectionClass .fullWidth .projectFactsWrap .item:nth-child(4) {
-  background: #7a9eaf;
-}
-.sectionClass .fullWidth .projectFactsWrap .item span {
-  width: 60px;
-  background: rgba(255, 255, 255, 0.8);
-  height: 2px;
+.counts .content .count-box i {
   display: block;
-  margin: 0 auto;
+  font-size: 36px;
+  color: #fff;
+  float: left;
 }
-.sectionClass .fullWidth .projectFactsWrap .item i {
-  vertical-align: middle;
-  font-size: 50px;
-  color: rgba(255, 255, 255, 0.8);
+.counts .content .count-box .num {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  display: block;
+  font-weight: 700;
+  color: #3a5460;
+  margin-left: 50px;
 }
-.sectionClass .fullWidth .projectFactsWrap .item .plus-sign::after {
-  content: "+";
-  padding-left: 0.5rem !important;
+.counts .content .count-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 50px;
+  font-family: "Familjen Grotesk", sans-serif;
+  font-size: 16px !important;
+  color: #f5f5f5;
 }
-.sectionClass .fullWidth .projectFactsWrap .item .percent-sign::after {
-  content: "%";
-  padding-left: 0.5rem !important;
+.counts .content .count-box p span {
+  font-family: "Gelasio", sans-serif !important;
+  font-size: 20px;
+  color: #3a5460;
 }
-.sectionClass .fullWidth .projectFactsWrap .item:hover i, .sectionClass .fullWidth .projectFactsWrap .item p {
-  color: white;
+.counts .content .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Familjen Grotesk", sans-serif;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
-.sectionClass .fullWidth .projectFactsWrap .item:hover span {
-  background: white;
+.counts .content .count-box a:hover {
+  color: #626262;
+}
+.counts .image {
+  background: url("/assets/img/gaol-pic_BW.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -5px rgba(0, 0, 0, 0);
 }
 
-#projectFacts .fullWidth {
-  padding: 0;
+@media (max-width: 991px) {
+  .counts .image {
+    text-align: center;
+  }
+  .counts .image img {
+    max-width: 80%;
+  }
 }
-
-@media (max-width: 786px) {
-  .projectFactsWrap .item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+@media (max-width: 667px) {
+  .counts .image img {
+    max-width: 100%;
   }
 }
 /** Org. Gaols **/
@@ -1528,18 +1522,19 @@ footer .footer-bottom .credit p + p {
   position: fixed;
   bottom: 50px;
   right: 0;
-  background-color: rgba(99, 100, 101, 0.8);
-  color: #020202 !important;
+  background-color: rgb(75, 110, 126);
+  color: #fff !important;
   text-align: center;
   font-size: 30px;
   text-decoration: none;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px -5px rgba(0, 0, 0, 0);
 }
 
-#back2Top:hover {
+/**#back2Top:hover {
   background-color: rgba(255, 255, 255, 0.15);
   color: #AF7A9E;
-}
-
+}**/
 /** Header **/
 .main-header {
   position: fixed;
@@ -1559,14 +1554,16 @@ footer .footer-bottom .credit p + p {
   text-transform: uppercase;
   height: 100px;
   padding: 0 30px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   /* Logo */
   /* Main-menu */
 }
-.main-header .logo {
-  width: 210px;
+.main-header .logo, .main-header .logoB {
+  width: 180px;
   height: auto;
 }
-.main-header .logo img {
+.main-header .logo img, .main-header .logoB img {
   display: block;
   width: 100%;
   height: auto;
@@ -1582,16 +1579,18 @@ footer .footer-bottom .credit p + p {
 }
 .main-header .main-menu ul li {
   position: relative;
-  font-size: 0.9rem;
+  top: 0.6rem;
+  font-family: "Gelasio", sans-serif;
+  font-size: 1rem;
   margin-right: 20px;
   padding-bottom: 2px;
   cursor: pointer;
+  /*a:active {
+      color: #5d879b !important;
+  }*/
 }
 .main-header .main-menu ul li a:hover {
-  color: #6C98B2 !important;
-}
-.main-header .main-menu ul li a:active {
-  color: #6C98B2 !important;
+  color: #fff !important;
 }
 .main-header .main-menu ul li a::after {
   content: "";
@@ -1603,10 +1602,10 @@ footer .footer-bottom .credit p + p {
   background: #fff;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transform-origin: right center;
           transform-origin: right center;
 }
@@ -1615,14 +1614,14 @@ footer .footer-bottom .credit p + p {
           transform: scaleX(1);
   -webkit-transform-origin: left center;
           transform-origin: left center;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 /** Hamburger Menu **/
 .hamburger {
   position: fixed;
-  top: 35px;
+  top: 2.7rem;
   right: 20px;
   z-index: 10;
   cursor: pointer;
@@ -1799,7 +1798,7 @@ footer .footer-bottom .credit p + p {
   background-color: transparent;
   color: #fff !important;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   width: 150px;
   -webkit-transition: all 0.5s;
@@ -1808,7 +1807,7 @@ footer .footer-bottom .credit p + p {
 }
 
 .get-in-touch-btn span {
-  font-family: "Familjen Grotesk", sans-serif;
+  font-family: "Gelasio", sans-serif;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -1820,7 +1819,7 @@ footer .footer-bottom .credit p + p {
 .get-in-touch-btn span:after {
   content: "»";
   position: absolute;
-  color: #7a9eaf;
+  color: #5d879b !important;
   opacity: 0;
   top: 0;
   right: -20px;
@@ -1898,20 +1897,20 @@ footer .footer-bottom .credit p + p {
   font-family: "D-DIN", sans-serif;
   cursor: pointer;
   letter-spacing: 1px;
-  color: #6C98B2 !important;
+  color: #5d879b !important;
   text-align: center;
   min-width: 130px;
   padding: 15px 50px;
   margin-top: 10px;
   border-radius: 0;
-  border: 2px solid #6C98B2;
+  border: 2px solid #5d879b;
   text-transform: uppercase;
   font-weight: 600;
   overflow: hidden;
   z-index: 2;
 }
 .btn-hero:hover span {
-  color: #000;
+  color: #1b292d;
 }
 .btn-hero .hover {
   position: absolute;
@@ -1919,7 +1918,7 @@ footer .footer-bottom .credit p + p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #6C98B2;
+  background-color: #5d879b;
   color: #fff !important;
   z-index: -1;
   -webkit-transform: translateY(100%);
@@ -2130,6 +2129,7 @@ footer .footer-bottom .credit p + p {
 
 .mobile-main-menu ul li {
   margin-bottom: 20px;
+  font-family: "Gelasio", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   border-bottom: 1px #555 dotted;
@@ -2145,5 +2145,5 @@ footer .footer-bottom .credit p + p {
 }
 
 .mobile-main-menu ul li a:hover {
-  color: #aaa !important;
+  color: #6C98B2 !important;
 }
